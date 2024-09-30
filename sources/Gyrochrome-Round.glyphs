@@ -582,242 +582,35 @@ date = "2024-09-29 22:03:21 +0000";
 familyName = Gyrochrome;
 featurePrefixes = (
 {
-code = "lookup POS_0 {
-	pos C a -64;
-	pos C c -64;
-	pos C d -64;
-	pos C e -64;
-	pos C g -64;
-	pos C o -64;
-	pos C q -64;
-	pos T A -512;
-	pos W a -256;
-	pos W c -256;
-	pos W d -256;
-	pos W e -256;
-	pos W g -256;
-	pos W o -256;
-	pos W q -256;
-	pos X a -128;
-	pos X c -128;
-	pos X d -128;
-	pos X e -128;
-	pos X g -128;
-	pos X o -128;
-	pos X q -128;
-	pos b w -64;
-	pos b x -96;
-	pos e w -64;
-	pos e x -96;
-	pos k a -96;
-	pos k c -96;
-	pos k d -96;
-	pos k e -96;
-	pos k g -96;
-	pos k o -96;
-	pos k q -96;
-	pos m v -64;
-	pos m w -64;
-	pos m y -64;
-	pos o w -64;
-	pos o x -96;
-	pos p w -64;
-	pos p x -96;
-	pos t a -64;
-	pos t c -64;
-	pos t d -64;
-	pos t e -64;
-	pos t g -64;
-	pos t o -64;
-	pos t q -64;
-	pos v a -64;
-	pos v c -64;
-	pos v d -64;
-	pos v e -64;
-	pos v g -64;
-	pos v o -64;
-	pos v q -64;
-	pos w a -64;
-	pos w c -64;
-	pos w d -64;
-	pos w e -64;
-	pos w g -64;
-	pos w o -64;
-	pos w q -64;
-	pos x a -96;
-	pos x c -96;
-	pos x d -96;
-	pos x e -96;
-	pos x g -96;
-	pos x o -96;
-	pos x q -96;
-	pos y a -64;
-	pos y c -64;
-	pos y d -64;
-	pos y e -64;
-	pos y g -64;
-	pos y o -64;
-	pos y q -64;
-	@POS_0_1_R_0 = [a c d e g o q];
-	pos T @POS_0_1_R_0 -512;
-	@POS_0_2_L_0 = [b e o p];
-	@POS_0_2_R_0 = [a c d e g o q];
-	pos @POS_0_2_L_0 @POS_0_2_R_0 0;
-	pos @POS_0_2_L_0 [v w y] -64;
-	pos [m n] @POS_0_2_R_0 0;
-	pos [m n] [v w y] -64;
-	pos Y @POS_0_2_R_0 -512;
-	pos Y [v w y] 0;
-	pos V @POS_0_2_R_0 -256;
-	pos V [v w y] 0;
-	pos P @POS_0_2_R_0 -64;
-	pos P [v w y] 0;
-	pos L @POS_0_2_R_0 -128;
-	pos L [v w y] 0;
-	pos K @POS_0_2_R_0 -128;
-	pos K [v w y] 0;
-} POS_0;
-lookup SUB_10 {
-	sub L periodcentered by Ldot;
-} SUB_10;
-lookup SUB_16 {
-	sub A by ordfeminine;
-	sub O by ordmasculine;
-	sub a by ordfeminine;
-	sub o by ordmasculine;
-} SUB_16;
-lookup SUB_3 {
-	sub i by dotlessi;
-	sub j by uni0237;
-} SUB_3;
-lookup SUB_4 {
-	sub iogonek by dotlessi uni0328;
-} SUB_4;
-lookup SUB_9 {
-	sub l periodcentered by ldot;
-} SUB_9;
+automatic = 1;
+code = "languagesystem DFLT dflt;
+
+languagesystem latn dflt;
+languagesystem latn AZE;
+languagesystem latn CAT;
+languagesystem latn CRT;
+languagesystem latn KAZ;
+languagesystem latn MOL;
+languagesystem latn ROM;
+languagesystem latn TAT;
+languagesystem latn TRK;
+languagesystem latn MAH;
+languagesystem latn NLD;
 ";
-name = Prefix;
+name = Languagesystems;
 }
 );
 features = (
 {
 automatic = 1;
-code = "";
+code = "feature numr;
+feature dnom;
+feature frac;
+feature locl;
+feature ordn;
+feature sups;
+";
 tag = aalt;
-},
-{
-code = "script DFLT;
-language dflt;
-lookup SUB_2 {
-	@SUB_2_0_LA_0 = [uni0308 uni0307 gravecomb acutecomb uni030B uni0302 uni030C uni0306 uni030A tildecomb uni0304 uni0311 uni0312];
-	sub [i j]' lookup SUB_3 @SUB_2_0_LA_0;
-	sub [i j]' lookup SUB_3 [uni0327 uni0328] @SUB_2_0_LA_0;
-	sub iogonek' lookup SUB_4 @SUB_2_0_LA_0;
-} SUB_2;
-lookup SUB_5 {
-	sub uni01C4 by D Zcaron;
-	sub uni01C5 by D zcaron;
-	sub uni01C7 by L J;
-	sub uni01C8 by L j;
-	sub uni01CA by N J;
-	sub uni01CB by N j;
-	sub uni01C6 by d zcaron;
-	sub uni01C9 by l j;
-	sub uni01CC by n j;
-	sub fi by f i;
-	sub fl by f l;
-} SUB_5;
-script latn;
-language dflt;
-lookup SUB_2;
-lookup SUB_5;
-language AZE;
-lookup SUB_2;
-lookup SUB_5;
-language CAT;
-lookup SUB_2;
-lookup SUB_5;
-language CRT;
-lookup SUB_2;
-lookup SUB_5;
-language KAZ;
-lookup SUB_2;
-lookup SUB_5;
-language MOL;
-lookup SUB_2;
-lookup SUB_5;
-language ROM;
-lookup SUB_2;
-lookup SUB_5;
-language TAT;
-lookup SUB_2;
-lookup SUB_5;
-language TRK;
-lookup SUB_2;
-lookup SUB_5;
-";
-tag = ccmp;
-},
-{
-code = "script latn;
-language AZE;
-lookup SUB_6 {
-	sub i by i.loclTRK;
-} SUB_6;
-language CRT;
-lookup SUB_6;
-language KAZ;
-lookup SUB_6;
-language TAT;
-lookup SUB_6;
-language TRK;
-lookup SUB_6;
-language MOL;
-lookup SUB_7 {
-	sub Scedilla by uni0218;
-	sub scedilla by uni0219;
-} SUB_7;
-language ROM;
-lookup SUB_7;
-language CAT;
-lookup SUB_8 {
-	sub L' lookup SUB_10 periodcentered' L;
-	sub l' lookup SUB_9 periodcentered' l;
-} SUB_8;
-";
-tag = locl;
-},
-{
-code = "script DFLT;
-language dflt;
-lookup SUB_11 {
-	sub one by uni00B9;
-	sub two by uni00B2;
-	sub three by uni00B3;
-	sub four by uni2074;
-} SUB_11;
-script latn;
-language dflt;
-lookup SUB_11;
-language AZE;
-lookup SUB_11;
-language CAT;
-lookup SUB_11;
-language CRT;
-lookup SUB_11;
-language KAZ;
-lookup SUB_11;
-language MOL;
-lookup SUB_11;
-language ROM;
-lookup SUB_11;
-language TAT;
-lookup SUB_11;
-language TRK;
-lookup SUB_11;
-";
-tag = sups;
 },
 {
 code = "script DFLT;
@@ -914,37 +707,6 @@ tag = frac;
 {
 code = "script DFLT;
 language dflt;
-lookup SUB_15 {
-	@SUB_15_0_BT_0 = [zero one two three four five six seven eight nine];
-	sub @SUB_15_0_BT_0 [A a]' lookup SUB_16;
-	@SUB_15_1_BT_0 = [zero one two three four five six seven eight nine];
-	sub @SUB_15_1_BT_0 [O o]' lookup SUB_16;
-} SUB_15;
-script latn;
-language dflt;
-lookup SUB_15;
-language AZE;
-lookup SUB_15;
-language CAT;
-lookup SUB_15;
-language CRT;
-lookup SUB_15;
-language KAZ;
-lookup SUB_15;
-language MOL;
-lookup SUB_15;
-language ROM;
-lookup SUB_15;
-language TAT;
-lookup SUB_15;
-language TRK;
-lookup SUB_15;
-";
-tag = ordn;
-},
-{
-code = "script DFLT;
-language dflt;
 lookup SUB_17 {
 	lookupflag IgnoreMarks;
 	sub f i by fi;
@@ -973,532 +735,85 @@ lookup SUB_17;
 tag = liga;
 },
 {
-code = "script DFLT;
-language dflt;
-lookup SUB_18 {
-	sub a by a.ss01;
-} SUB_18;
+automatic = 1;
+code = "lookup ccmp_Other_1 {
+	@CombiningTopAccents = [acutecomb brevecomb breveinvertedcomb caroncomb circumflexcomb commaturnedabovecomb dieresiscomb dotaccentcomb gravecomb hungarumlautcomb macroncomb ringcomb tildecomb];
+	lookupflag UseMarkFilteringSet @CombiningTopAccents;
+	sub i' @CombiningTopAccents by idotless;
+	sub j' @CombiningTopAccents by jdotless;
+} ccmp_Other_1;
+
+lookup ccmp_latn_1 {
+	lookupflag 0;
+	sub fi by f i;
+	sub fl by f l;
+} ccmp_latn_1;
+
 script latn;
-language dflt;
-lookup SUB_18;
-language AZE;
-lookup SUB_18;
-language CAT;
-lookup SUB_18;
-language CRT;
-lookup SUB_18;
-language KAZ;
-lookup SUB_18;
-language MOL;
-lookup SUB_18;
-language ROM;
-lookup SUB_18;
-language TAT;
-lookup SUB_18;
-language TRK;
-lookup SUB_18;
+lookup ccmp_latn_1;
 ";
-labels = (
-{
-language = dflt;
-value = "";
-}
-);
-tag = ss01;
+tag = ccmp;
 },
 {
-code = "script DFLT;
-language dflt;
-lookup SUB_19 {
-	sub R by R.ss02;
-} SUB_19;
-script latn;
-language dflt;
-lookup SUB_19;
+automatic = 1;
+code = "script latn;
 language AZE;
-lookup SUB_19;
-language CAT;
-lookup SUB_19;
+lookup locl_latn_0 {
+	sub i by idotaccent;
+} locl_latn_0;
 language CRT;
-lookup SUB_19;
+lookup locl_latn_0;
 language KAZ;
-lookup SUB_19;
-language MOL;
-lookup SUB_19;
-language ROM;
-lookup SUB_19;
+lookup locl_latn_0;
 language TAT;
-lookup SUB_19;
+lookup locl_latn_0;
 language TRK;
-lookup SUB_19;
+lookup locl_latn_0;
+
+script latn;
+language ROM;
+lookup locl_latn_1 {
+	sub Scedilla by Scommaaccent;
+	sub scedilla by scommaaccent;
+	sub Tcedilla by Tcommaaccent;
+	sub tcedilla by tcommaaccent;
+} locl_latn_1;
+language MOL;
+lookup locl_latn_1;
+
+script latn;
+language MAH;
+lookup locl_latn_2 {
+	sub Lcommaaccent by Lcommaaccent.loclMAH;
+	sub Ncommaaccent by Ncommaaccent.loclMAH;
+	sub lcommaaccent by lcommaaccent.loclMAH;
+	sub ncommaaccent by ncommaaccent.loclMAH;
+} locl_latn_2;
+
+script latn;
+language NLD;
+lookup locl_latn_3 {
+	sub iacute j' by jacute;
+	sub Iacute J' by Jacute;
+} locl_latn_3;
 ";
-labels = (
-{
-language = dflt;
-value = "";
-}
-);
-tag = ss02;
+tag = locl;
 },
 {
-code = "script DFLT;
-language dflt;
-lookup POS_2 {
-	markClass uni0308 <anchor 544 1152> @POS_2_0_MARK_0;
-	markClass uni0307 <anchor 224 1152> @POS_2_0_MARK_0;
-	markClass gravecomb <anchor 418 1092> @POS_2_0_MARK_0;
-	markClass acutecomb <anchor 416 1152> @POS_2_0_MARK_0;
-	markClass uni030B <anchor 471 1128> @POS_2_0_MARK_0;
-	markClass uni0302 <anchor 544 1152> @POS_2_0_MARK_0;
-	markClass uni030C <anchor 544 1152> @POS_2_0_MARK_0;
-	markClass uni0306 <anchor 640 1152> @POS_2_0_MARK_0;
-	markClass uni030A <anchor 640 1152> @POS_2_0_MARK_0;
-	markClass tildecomb <anchor 576 1152> @POS_2_0_MARK_0;
-	markClass uni0304 <anchor 512 1152> @POS_2_0_MARK_0;
-	markClass uni0311 <anchor 640 1152> @POS_2_0_MARK_0;
-	markClass uni0312 <anchor 157 1152> @POS_2_0_MARK_0;
-	markClass uni030C.alt <anchor 147 1638> @POS_2_0_MARK_1;
-	markClass uni0326 <anchor 224 0> @POS_2_0_MARK_2;
-	markClass uni0327 <anchor 207 0> @POS_2_0_MARK_2;
-	markClass uni0328 <anchor 512 64> @POS_2_0_MARK_3;
-	pos base A <anchor 1088 1536> mark @POS_2_0_MARK_0 <anchor 1088 0> mark @POS_2_0_MARK_2 <anchor 2082 21> mark @POS_2_0_MARK_3;
-	pos base Aacute <anchor 1152 2302> mark @POS_2_0_MARK_0 <anchor 1088 0> mark @POS_2_0_MARK_2 <anchor 2082 21> mark @POS_2_0_MARK_3;
-	pos base Abreve <anchor 1088 2011> mark @POS_2_0_MARK_0 <anchor 1088 0> mark @POS_2_0_MARK_2 <anchor 2082 21> mark @POS_2_0_MARK_3;
-	pos base uni01CD <anchor 1088 2266> mark @POS_2_0_MARK_0 <anchor 1088 0> mark @POS_2_0_MARK_2 <anchor 2082 21> mark @POS_2_0_MARK_3;
-	pos base Acircumflex <anchor 1088 2270> mark @POS_2_0_MARK_0 <anchor 1088 0> mark @POS_2_0_MARK_2 <anchor 2082 21> mark @POS_2_0_MARK_3;
-	pos base uni0200 <anchor 1088 1536> mark @POS_2_0_MARK_0 <anchor 1088 0> mark @POS_2_0_MARK_2 <anchor 2082 21> mark @POS_2_0_MARK_3;
-	pos base Adieresis <anchor 1088 1983> mark @POS_2_0_MARK_0 <anchor 1088 0> mark @POS_2_0_MARK_2 <anchor 2082 21> mark @POS_2_0_MARK_3;
-	pos base uni0226 <anchor 1088 1826> mark @POS_2_0_MARK_0 <anchor 1088 0> mark @POS_2_0_MARK_2 <anchor 2082 21> mark @POS_2_0_MARK_3;
-	pos base Agrave <anchor 1150 2300> mark @POS_2_0_MARK_0 <anchor 1088 0> mark @POS_2_0_MARK_2 <anchor 2082 21> mark @POS_2_0_MARK_3;
-	pos base uni0202 <anchor 1088 2013> mark @POS_2_0_MARK_0 <anchor 1088 0> mark @POS_2_0_MARK_2 <anchor 2082 21> mark @POS_2_0_MARK_3;
-	pos base Amacron <anchor 1088 1849> mark @POS_2_0_MARK_0 <anchor 1088 0> mark @POS_2_0_MARK_2 <anchor 2082 21> mark @POS_2_0_MARK_3;
-	pos base Aogonek <anchor 1088 1536> mark @POS_2_0_MARK_0 <anchor 1088 0> mark @POS_2_0_MARK_2 <anchor 2082 21> mark @POS_2_0_MARK_3;
-	pos base Aring <anchor 1088 2274> mark @POS_2_0_MARK_0 <anchor 1088 0> mark @POS_2_0_MARK_2 <anchor 2082 21> mark @POS_2_0_MARK_3;
-	pos base Aringacute <anchor 1152 3040> mark @POS_2_0_MARK_0 <anchor 1088 0> mark @POS_2_0_MARK_2 <anchor 2082 21> mark @POS_2_0_MARK_3;
-	pos base Atilde <anchor 1088 1983> mark @POS_2_0_MARK_0 <anchor 1088 0> mark @POS_2_0_MARK_2 <anchor 2082 21> mark @POS_2_0_MARK_3;
-	pos base AE <anchor 2246 1536> mark @POS_2_0_MARK_0 <anchor 1536 0> mark @POS_2_0_MARK_2;
-	pos base AEacute <anchor 2310 2302> mark @POS_2_0_MARK_0 <anchor 1536 0> mark @POS_2_0_MARK_2;
-	pos base uni01E2 <anchor 2246 1849> mark @POS_2_0_MARK_0 <anchor 1536 0> mark @POS_2_0_MARK_2;
-	pos base B <anchor 1086 1536> mark @POS_2_0_MARK_0 <anchor 1056 0> mark @POS_2_0_MARK_2;
-	pos base uni1E02 <anchor 1086 1826> mark @POS_2_0_MARK_0 <anchor 1056 0> mark @POS_2_0_MARK_2;
-	pos base C <anchor 1063 1536> mark @POS_2_0_MARK_0 <anchor 1042 0> mark @POS_2_0_MARK_2;
-	pos base Cacute <anchor 1127 2302> mark @POS_2_0_MARK_0 <anchor 1042 0> mark @POS_2_0_MARK_2;
-	pos base Ccaron <anchor 1063 2266> mark @POS_2_0_MARK_0 <anchor 1042 0> mark @POS_2_0_MARK_2;
-	pos base Ccedilla <anchor 1063 1536> mark @POS_2_0_MARK_0 <anchor 1155 -544> mark @POS_2_0_MARK_2;
-	pos base Ccircumflex <anchor 1063 2270> mark @POS_2_0_MARK_0 <anchor 1042 0> mark @POS_2_0_MARK_2;
-	pos base Cdotaccent <anchor 1063 1826> mark @POS_2_0_MARK_0 <anchor 1042 0> mark @POS_2_0_MARK_2;
-	pos base D <anchor 1116 1536> mark @POS_2_0_MARK_0 <anchor 1104 0> mark @POS_2_0_MARK_2;
-	pos base Dcaron <anchor 1116 2266> mark @POS_2_0_MARK_0 <anchor 1104 0> mark @POS_2_0_MARK_2;
-	pos base uni1E0A <anchor 1116 1826> mark @POS_2_0_MARK_0 <anchor 1104 0> mark @POS_2_0_MARK_2;
-	pos base E <anchor 956 1536> mark @POS_2_0_MARK_0 <anchor 896 0> mark @POS_2_0_MARK_2 <anchor 1714 21> mark @POS_2_0_MARK_3;
-	pos base Eacute <anchor 1020 2302> mark @POS_2_0_MARK_0 <anchor 896 0> mark @POS_2_0_MARK_2 <anchor 1714 21> mark @POS_2_0_MARK_3;
-	pos base Ebreve <anchor 956 2011> mark @POS_2_0_MARK_0 <anchor 896 0> mark @POS_2_0_MARK_2 <anchor 1714 21> mark @POS_2_0_MARK_3;
-	pos base Ecaron <anchor 956 2266> mark @POS_2_0_MARK_0 <anchor 896 0> mark @POS_2_0_MARK_2 <anchor 1714 21> mark @POS_2_0_MARK_3;
-	pos base uni0228 <anchor 956 1536> mark @POS_2_0_MARK_0 <anchor 1009 -544> mark @POS_2_0_MARK_2 <anchor 1714 21> mark @POS_2_0_MARK_3;
-	pos base Ecircumflex <anchor 956 2270> mark @POS_2_0_MARK_0 <anchor 896 0> mark @POS_2_0_MARK_2 <anchor 1714 21> mark @POS_2_0_MARK_3;
-	pos base uni0204 <anchor 956 1536> mark @POS_2_0_MARK_0 <anchor 896 0> mark @POS_2_0_MARK_2 <anchor 1714 21> mark @POS_2_0_MARK_3;
-	pos base Edieresis <anchor 956 1983> mark @POS_2_0_MARK_0 <anchor 896 0> mark @POS_2_0_MARK_2 <anchor 1714 21> mark @POS_2_0_MARK_3;
-	pos base Edotaccent <anchor 956 1826> mark @POS_2_0_MARK_0 <anchor 896 0> mark @POS_2_0_MARK_2 <anchor 1714 21> mark @POS_2_0_MARK_3;
-	pos base Egrave <anchor 1018 2300> mark @POS_2_0_MARK_0 <anchor 896 0> mark @POS_2_0_MARK_2 <anchor 1714 21> mark @POS_2_0_MARK_3;
-	pos base uni0206 <anchor 956 2013> mark @POS_2_0_MARK_0 <anchor 896 0> mark @POS_2_0_MARK_2 <anchor 1714 21> mark @POS_2_0_MARK_3;
-	pos base Emacron <anchor 956 1849> mark @POS_2_0_MARK_0 <anchor 896 0> mark @POS_2_0_MARK_2 <anchor 1714 21> mark @POS_2_0_MARK_3;
-	pos base Eogonek <anchor 956 1536> mark @POS_2_0_MARK_0 <anchor 896 0> mark @POS_2_0_MARK_2 <anchor 1714 21> mark @POS_2_0_MARK_3;
-	pos base uni1EBC <anchor 956 1983> mark @POS_2_0_MARK_0 <anchor 896 0> mark @POS_2_0_MARK_2 <anchor 1714 21> mark @POS_2_0_MARK_3;
-	pos base F <anchor 864 1536> mark @POS_2_0_MARK_0 <anchor 864 0> mark @POS_2_0_MARK_2;
-	pos base uni1E1E <anchor 864 1826> mark @POS_2_0_MARK_0 <anchor 864 0> mark @POS_2_0_MARK_2;
-	pos base G <anchor 1089 1536> mark @POS_2_0_MARK_0 <anchor 1089 0> mark @POS_2_0_MARK_2;
-	pos base uni01F4 <anchor 1153 2302> mark @POS_2_0_MARK_0 <anchor 1089 0> mark @POS_2_0_MARK_2;
-	pos base Gbreve <anchor 1089 2011> mark @POS_2_0_MARK_0 <anchor 1089 0> mark @POS_2_0_MARK_2;
-	pos base Gcaron <anchor 1089 2266> mark @POS_2_0_MARK_0 <anchor 1089 0> mark @POS_2_0_MARK_2;
-	pos base Gcircumflex <anchor 1089 2270> mark @POS_2_0_MARK_0 <anchor 1089 0> mark @POS_2_0_MARK_2;
-	pos base uni0122 <anchor 1089 1536> mark @POS_2_0_MARK_0 <anchor 1057 -536> mark @POS_2_0_MARK_2;
-	pos base Gdotaccent <anchor 1089 1826> mark @POS_2_0_MARK_0 <anchor 1089 0> mark @POS_2_0_MARK_2;
-	pos base H <anchor 1092 1536> mark @POS_2_0_MARK_0 <anchor 1092 0> mark @POS_2_0_MARK_2;
-	pos base uni021E <anchor 1092 2266> mark @POS_2_0_MARK_0 <anchor 1092 0> mark @POS_2_0_MARK_2;
-	pos base Hcircumflex <anchor 1092 2270> mark @POS_2_0_MARK_0 <anchor 1092 0> mark @POS_2_0_MARK_2;
-	pos base I <anchor 288 1536> mark @POS_2_0_MARK_0 <anchor 288 0> mark @POS_2_0_MARK_2 <anchor 377 20> mark @POS_2_0_MARK_3;
-	pos base IJ <anchor 377 20> mark @POS_2_0_MARK_3;
-	pos base Iacute <anchor 352 2302> mark @POS_2_0_MARK_0 <anchor 288 0> mark @POS_2_0_MARK_2 <anchor 377 20> mark @POS_2_0_MARK_3;
-	pos base Ibreve <anchor 288 2011> mark @POS_2_0_MARK_0 <anchor 288 0> mark @POS_2_0_MARK_2 <anchor 377 20> mark @POS_2_0_MARK_3;
-	pos base uni01CF <anchor 288 2266> mark @POS_2_0_MARK_0 <anchor 288 0> mark @POS_2_0_MARK_2 <anchor 377 20> mark @POS_2_0_MARK_3;
-	pos base Icircumflex <anchor 288 2270> mark @POS_2_0_MARK_0 <anchor 288 0> mark @POS_2_0_MARK_2 <anchor 377 20> mark @POS_2_0_MARK_3;
-	pos base uni0208 <anchor 444 1465> mark @POS_2_0_MARK_0 <anchor 483 1606> mark @POS_2_0_MARK_1 <anchor 288 0> mark @POS_2_0_MARK_2;
-	pos base Idieresis <anchor 288 1983> mark @POS_2_0_MARK_0 <anchor 288 0> mark @POS_2_0_MARK_2 <anchor 377 20> mark @POS_2_0_MARK_3;
-	pos base Idotaccent <anchor 288 1826> mark @POS_2_0_MARK_0 <anchor 288 0> mark @POS_2_0_MARK_2 <anchor 377 20> mark @POS_2_0_MARK_3;
-	pos base Igrave <anchor 350 2300> mark @POS_2_0_MARK_0 <anchor 288 0> mark @POS_2_0_MARK_2 <anchor 377 20> mark @POS_2_0_MARK_3;
-	pos base uni020A <anchor 288 2013> mark @POS_2_0_MARK_0 <anchor 288 0> mark @POS_2_0_MARK_2 <anchor 377 20> mark @POS_2_0_MARK_3;
-	pos base Imacron <anchor 288 1849> mark @POS_2_0_MARK_0 <anchor 288 0> mark @POS_2_0_MARK_2 <anchor 377 20> mark @POS_2_0_MARK_3;
-	pos base Iogonek <anchor 288 1536> mark @POS_2_0_MARK_0 <anchor 288 0> mark @POS_2_0_MARK_2 <anchor 377 20> mark @POS_2_0_MARK_3;
-	pos base Itilde <anchor 288 1983> mark @POS_2_0_MARK_0 <anchor 288 0> mark @POS_2_0_MARK_2 <anchor 377 20> mark @POS_2_0_MARK_3;
-	pos base J <anchor 1441 1536> mark @POS_2_0_MARK_0 <anchor 858 0> mark @POS_2_0_MARK_2;
-	pos base Jcircumflex <anchor 1441 2270> mark @POS_2_0_MARK_0 <anchor 858 0> mark @POS_2_0_MARK_2;
-	pos base K <anchor 1008 1536> mark @POS_2_0_MARK_0 <anchor 1008 0> mark @POS_2_0_MARK_2;
-	pos base uni01E8 <anchor 1008 2266> mark @POS_2_0_MARK_0 <anchor 1008 0> mark @POS_2_0_MARK_2;
-	pos base uni0136 <anchor 1008 1536> mark @POS_2_0_MARK_0 <anchor 976 -536> mark @POS_2_0_MARK_2;
-	pos base L <anchor 832 1536> mark @POS_2_0_MARK_0 <anchor 748 1638> mark @POS_2_0_MARK_1 <anchor 832 0> mark @POS_2_0_MARK_2;
-	pos base uni01C7 <anchor 748 1638> mark @POS_2_0_MARK_1;
-	pos base Lacute <anchor 896 2302> mark @POS_2_0_MARK_0 <anchor 748 1638> mark @POS_2_0_MARK_1 <anchor 832 0> mark @POS_2_0_MARK_2;
-	pos base Lcaron <anchor 832 1536> mark @POS_2_0_MARK_0 <anchor 748 1638> mark @POS_2_0_MARK_1 <anchor 832 0> mark @POS_2_0_MARK_2;
-	pos base uni013B <anchor 832 1536> mark @POS_2_0_MARK_0 <anchor 748 1638> mark @POS_2_0_MARK_1 <anchor 800 -536> mark @POS_2_0_MARK_2;
-	pos base Ldot <anchor 832 1536> mark @POS_2_0_MARK_0 <anchor 748 1638> mark @POS_2_0_MARK_1 <anchor 832 0> mark @POS_2_0_MARK_2;
-	pos base uni01C8 <anchor 832 1536> mark @POS_2_0_MARK_0 <anchor 748 1638> mark @POS_2_0_MARK_1 <anchor 832 0> mark @POS_2_0_MARK_2;
-	pos base M <anchor 1404 1536> mark @POS_2_0_MARK_0 <anchor 1404 0> mark @POS_2_0_MARK_2;
-	pos base uni1E40 <anchor 1404 1826> mark @POS_2_0_MARK_0 <anchor 1404 0> mark @POS_2_0_MARK_2;
-	pos base N <anchor 1161 1536> mark @POS_2_0_MARK_0 <anchor 1161 0> mark @POS_2_0_MARK_2;
-	pos base Nacute <anchor 1225 2302> mark @POS_2_0_MARK_0 <anchor 1161 0> mark @POS_2_0_MARK_2;
-	pos base Ncaron <anchor 1161 2266> mark @POS_2_0_MARK_0 <anchor 1161 0> mark @POS_2_0_MARK_2;
-	pos base uni0145 <anchor 1161 1536> mark @POS_2_0_MARK_0 <anchor 1129 -536> mark @POS_2_0_MARK_2;
-	pos base uni01F8 <anchor 1223 2300> mark @POS_2_0_MARK_0 <anchor 1161 0> mark @POS_2_0_MARK_2;
-	pos base uni01CB <anchor 1161 1536> mark @POS_2_0_MARK_0 <anchor 1161 0> mark @POS_2_0_MARK_2;
-	pos base Ntilde <anchor 1161 1983> mark @POS_2_0_MARK_0 <anchor 1161 0> mark @POS_2_0_MARK_2;
-	pos base Eng <anchor 865 1152> mark @POS_2_0_MARK_0 <anchor 865 0> mark @POS_2_0_MARK_2;
-	pos base O <anchor 1073 1536> mark @POS_2_0_MARK_0 <anchor 1888 1536> mark @POS_2_0_MARK_1 <anchor 836 0> mark @POS_2_0_MARK_2 <anchor 1204 20> mark @POS_2_0_MARK_3;
-	pos base Oacute <anchor 1137 2302> mark @POS_2_0_MARK_0 <anchor 1888 1536> mark @POS_2_0_MARK_1 <anchor 836 0> mark @POS_2_0_MARK_2 <anchor 1204 20> mark @POS_2_0_MARK_3;
-	pos base Obreve <anchor 1073 2011> mark @POS_2_0_MARK_0 <anchor 1888 1536> mark @POS_2_0_MARK_1 <anchor 836 0> mark @POS_2_0_MARK_2 <anchor 1204 20> mark @POS_2_0_MARK_3;
-	pos base uni01D1 <anchor 1073 2266> mark @POS_2_0_MARK_0 <anchor 1888 1536> mark @POS_2_0_MARK_1 <anchor 836 0> mark @POS_2_0_MARK_2 <anchor 1204 20> mark @POS_2_0_MARK_3;
-	pos base Ocircumflex <anchor 1073 2270> mark @POS_2_0_MARK_0 <anchor 1888 1536> mark @POS_2_0_MARK_1 <anchor 836 0> mark @POS_2_0_MARK_2 <anchor 1204 20> mark @POS_2_0_MARK_3;
-	pos base uni020C <anchor 1073 1536> mark @POS_2_0_MARK_0 <anchor 1888 1536> mark @POS_2_0_MARK_1 <anchor 836 0> mark @POS_2_0_MARK_2 <anchor 1204 20> mark @POS_2_0_MARK_3;
-	pos base Odieresis <anchor 1073 1983> mark @POS_2_0_MARK_0 <anchor 1888 1536> mark @POS_2_0_MARK_1 <anchor 836 0> mark @POS_2_0_MARK_2 <anchor 1204 20> mark @POS_2_0_MARK_3;
-	pos base uni022E <anchor 1073 1826> mark @POS_2_0_MARK_0 <anchor 1888 1536> mark @POS_2_0_MARK_1 <anchor 836 0> mark @POS_2_0_MARK_2 <anchor 1204 20> mark @POS_2_0_MARK_3;
-	pos base Ograve <anchor 1135 2300> mark @POS_2_0_MARK_0 <anchor 1888 1536> mark @POS_2_0_MARK_1 <anchor 836 0> mark @POS_2_0_MARK_2 <anchor 1204 20> mark @POS_2_0_MARK_3;
-	pos base Ohungarumlaut <anchor 1359 2264> mark @POS_2_0_MARK_0 <anchor 1888 1536> mark @POS_2_0_MARK_1 <anchor 836 0> mark @POS_2_0_MARK_2 <anchor 1204 20> mark @POS_2_0_MARK_3;
-	pos base uni020E <anchor 1073 2013> mark @POS_2_0_MARK_0 <anchor 1888 1536> mark @POS_2_0_MARK_1 <anchor 836 0> mark @POS_2_0_MARK_2 <anchor 1204 20> mark @POS_2_0_MARK_3;
-	pos base Omacron <anchor 1073 1849> mark @POS_2_0_MARK_0 <anchor 1888 1536> mark @POS_2_0_MARK_1 <anchor 836 0> mark @POS_2_0_MARK_2 <anchor 1204 20> mark @POS_2_0_MARK_3;
-	pos base uni01EA <anchor 1073 1536> mark @POS_2_0_MARK_0 <anchor 1888 1536> mark @POS_2_0_MARK_1 <anchor 836 0> mark @POS_2_0_MARK_2 <anchor 1204 20> mark @POS_2_0_MARK_3;
-	pos base Oslash <anchor 1073 1536> mark @POS_2_0_MARK_0 <anchor 1888 1536> mark @POS_2_0_MARK_1 <anchor 836 0> mark @POS_2_0_MARK_2 <anchor 1204 20> mark @POS_2_0_MARK_3;
-	pos base Oslashacute <anchor 1137 2302> mark @POS_2_0_MARK_0 <anchor 1888 1536> mark @POS_2_0_MARK_1 <anchor 836 0> mark @POS_2_0_MARK_2 <anchor 1204 20> mark @POS_2_0_MARK_3;
-	pos base Otilde <anchor 1073 1983> mark @POS_2_0_MARK_0 <anchor 1888 1536> mark @POS_2_0_MARK_1 <anchor 836 0> mark @POS_2_0_MARK_2 <anchor 1204 20> mark @POS_2_0_MARK_3;
-	pos base OE <anchor 1760 1536> mark @POS_2_0_MARK_0 <anchor 1760 0> mark @POS_2_0_MARK_2;
-	pos base P <anchor 996 1536> mark @POS_2_0_MARK_0 <anchor 996 0> mark @POS_2_0_MARK_2;
-	pos base uni1E56 <anchor 996 1826> mark @POS_2_0_MARK_0 <anchor 996 0> mark @POS_2_0_MARK_2;
-	pos base Thorn <anchor 960 1536> mark @POS_2_0_MARK_0 <anchor 960 0> mark @POS_2_0_MARK_2;
-	pos base Q <anchor 1073 1536> mark @POS_2_0_MARK_0 <anchor 1888 1536> mark @POS_2_0_MARK_1 <anchor 836 0> mark @POS_2_0_MARK_2 <anchor 1204 20> mark @POS_2_0_MARK_3;
-	pos base R <anchor 1004 1536> mark @POS_2_0_MARK_0 <anchor 1044 0> mark @POS_2_0_MARK_2;
-	pos base Racute <anchor 1068 2302> mark @POS_2_0_MARK_0 <anchor 1044 0> mark @POS_2_0_MARK_2;
-	pos base Rcaron <anchor 1004 2266> mark @POS_2_0_MARK_0 <anchor 1044 0> mark @POS_2_0_MARK_2;
-	pos base uni0156 <anchor 1004 1536> mark @POS_2_0_MARK_0 <anchor 1012 -536> mark @POS_2_0_MARK_2;
-	pos base uni0210 <anchor 1004 1536> mark @POS_2_0_MARK_0 <anchor 1044 0> mark @POS_2_0_MARK_2;
-	pos base uni0212 <anchor 1004 2013> mark @POS_2_0_MARK_0 <anchor 1044 0> mark @POS_2_0_MARK_2;
-	pos base S <anchor 1071 1536> mark @POS_2_0_MARK_0 <anchor 1071 0> mark @POS_2_0_MARK_2;
-	pos base Sacute <anchor 1135 2302> mark @POS_2_0_MARK_0 <anchor 1071 0> mark @POS_2_0_MARK_2;
-	pos base Scaron <anchor 1071 2266> mark @POS_2_0_MARK_0 <anchor 1071 0> mark @POS_2_0_MARK_2;
-	pos base Scedilla <anchor 1071 1536> mark @POS_2_0_MARK_0 <anchor 1184 -544> mark @POS_2_0_MARK_2;
-	pos base Scircumflex <anchor 1071 2270> mark @POS_2_0_MARK_0 <anchor 1071 0> mark @POS_2_0_MARK_2;
-	pos base uni0218 <anchor 1071 1536> mark @POS_2_0_MARK_0 <anchor 1039 -536> mark @POS_2_0_MARK_2;
-	pos base uni1E60 <anchor 1071 1826> mark @POS_2_0_MARK_0 <anchor 1071 0> mark @POS_2_0_MARK_2;
-	pos base T <anchor 958 1536> mark @POS_2_0_MARK_0 <anchor 958 0> mark @POS_2_0_MARK_2;
-	pos base Tbar <anchor 958 1536> mark @POS_2_0_MARK_0 <anchor 958 0> mark @POS_2_0_MARK_2;
-	pos base Tcaron <anchor 958 2266> mark @POS_2_0_MARK_0 <anchor 958 0> mark @POS_2_0_MARK_2;
-	pos base uni021A <anchor 958 1536> mark @POS_2_0_MARK_0 <anchor 926 -536> mark @POS_2_0_MARK_2;
-	pos base uni1E6A <anchor 958 1826> mark @POS_2_0_MARK_0 <anchor 958 0> mark @POS_2_0_MARK_2;
-	pos base U <anchor 1060 1536> mark @POS_2_0_MARK_0 <anchor 2100 1536> mark @POS_2_0_MARK_1 <anchor 1060 0> mark @POS_2_0_MARK_2 <anchor 1121 21> mark @POS_2_0_MARK_3;
-	pos base Uacute <anchor 1124 2302> mark @POS_2_0_MARK_0 <anchor 2100 1536> mark @POS_2_0_MARK_1 <anchor 1060 0> mark @POS_2_0_MARK_2 <anchor 1121 21> mark @POS_2_0_MARK_3;
-	pos base Ubreve <anchor 1060 2011> mark @POS_2_0_MARK_0 <anchor 2100 1536> mark @POS_2_0_MARK_1 <anchor 1060 0> mark @POS_2_0_MARK_2 <anchor 1121 21> mark @POS_2_0_MARK_3;
-	pos base uni01D3 <anchor 1060 2266> mark @POS_2_0_MARK_0 <anchor 2100 1536> mark @POS_2_0_MARK_1 <anchor 1060 0> mark @POS_2_0_MARK_2 <anchor 1121 21> mark @POS_2_0_MARK_3;
-	pos base Ucircumflex <anchor 1060 2270> mark @POS_2_0_MARK_0 <anchor 2100 1536> mark @POS_2_0_MARK_1 <anchor 1060 0> mark @POS_2_0_MARK_2 <anchor 1121 21> mark @POS_2_0_MARK_3;
-	pos base uni0214 <anchor 1060 1536> mark @POS_2_0_MARK_0 <anchor 2100 1536> mark @POS_2_0_MARK_1 <anchor 1060 0> mark @POS_2_0_MARK_2 <anchor 1121 21> mark @POS_2_0_MARK_3;
-	pos base Udieresis <anchor 1060 1983> mark @POS_2_0_MARK_0 <anchor 2100 1536> mark @POS_2_0_MARK_1 <anchor 1060 0> mark @POS_2_0_MARK_2 <anchor 1121 21> mark @POS_2_0_MARK_3;
-	pos base Ugrave <anchor 1122 2300> mark @POS_2_0_MARK_0 <anchor 2100 1536> mark @POS_2_0_MARK_1 <anchor 1060 0> mark @POS_2_0_MARK_2 <anchor 1121 21> mark @POS_2_0_MARK_3;
-	pos base Uhungarumlaut <anchor 1346 2264> mark @POS_2_0_MARK_0 <anchor 2100 1536> mark @POS_2_0_MARK_1 <anchor 1060 0> mark @POS_2_0_MARK_2 <anchor 1121 21> mark @POS_2_0_MARK_3;
-	pos base uni0216 <anchor 1060 2013> mark @POS_2_0_MARK_0 <anchor 2100 1536> mark @POS_2_0_MARK_1 <anchor 1060 0> mark @POS_2_0_MARK_2 <anchor 1121 21> mark @POS_2_0_MARK_3;
-	pos base Umacron <anchor 1060 1849> mark @POS_2_0_MARK_0 <anchor 2100 1536> mark @POS_2_0_MARK_1 <anchor 1060 0> mark @POS_2_0_MARK_2 <anchor 1121 21> mark @POS_2_0_MARK_3;
-	pos base Uogonek <anchor 1060 1536> mark @POS_2_0_MARK_0 <anchor 2100 1536> mark @POS_2_0_MARK_1 <anchor 1060 0> mark @POS_2_0_MARK_2 <anchor 1121 21> mark @POS_2_0_MARK_3;
-	pos base Uring <anchor 1060 2274> mark @POS_2_0_MARK_0 <anchor 2100 1536> mark @POS_2_0_MARK_1 <anchor 1060 0> mark @POS_2_0_MARK_2 <anchor 1121 21> mark @POS_2_0_MARK_3;
-	pos base Utilde <anchor 1060 1983> mark @POS_2_0_MARK_0 <anchor 2100 1536> mark @POS_2_0_MARK_1 <anchor 1060 0> mark @POS_2_0_MARK_2 <anchor 1121 21> mark @POS_2_0_MARK_3;
-	pos base V <anchor 1024 1536> mark @POS_2_0_MARK_0 <anchor 1024 0> mark @POS_2_0_MARK_2;
-	pos base W <anchor 1664 1536> mark @POS_2_0_MARK_0 <anchor 1664 0> mark @POS_2_0_MARK_2;
-	pos base Wacute <anchor 1728 2302> mark @POS_2_0_MARK_0 <anchor 1664 0> mark @POS_2_0_MARK_2;
-	pos base Wcircumflex <anchor 1664 2270> mark @POS_2_0_MARK_0 <anchor 1664 0> mark @POS_2_0_MARK_2;
-	pos base Wdieresis <anchor 1664 1983> mark @POS_2_0_MARK_0 <anchor 1664 0> mark @POS_2_0_MARK_2;
-	pos base Wgrave <anchor 1726 2300> mark @POS_2_0_MARK_0 <anchor 1664 0> mark @POS_2_0_MARK_2;
-	pos base X <anchor 1088 1536> mark @POS_2_0_MARK_0 <anchor 1088 0> mark @POS_2_0_MARK_2;
-	pos base Y <anchor 1088 1536> mark @POS_2_0_MARK_0 <anchor 1088 0> mark @POS_2_0_MARK_2;
-	pos base Yacute <anchor 1152 2302> mark @POS_2_0_MARK_0 <anchor 1088 0> mark @POS_2_0_MARK_2;
-	pos base Ycircumflex <anchor 1088 2270> mark @POS_2_0_MARK_0 <anchor 1088 0> mark @POS_2_0_MARK_2;
-	pos base Ydieresis <anchor 1088 1983> mark @POS_2_0_MARK_0 <anchor 1088 0> mark @POS_2_0_MARK_2;
-	pos base Ygrave <anchor 1150 2300> mark @POS_2_0_MARK_0 <anchor 1088 0> mark @POS_2_0_MARK_2;
-	pos base uni0232 <anchor 1088 1849> mark @POS_2_0_MARK_0 <anchor 1088 0> mark @POS_2_0_MARK_2;
-	pos base uni1EF8 <anchor 1088 1983> mark @POS_2_0_MARK_0 <anchor 1088 0> mark @POS_2_0_MARK_2;
-	pos base Z <anchor 1023 1536> mark @POS_2_0_MARK_0 <anchor 1023 0> mark @POS_2_0_MARK_2;
-	pos base Zacute <anchor 1087 2302> mark @POS_2_0_MARK_0 <anchor 1023 0> mark @POS_2_0_MARK_2;
-	pos base Zcaron <anchor 1023 2266> mark @POS_2_0_MARK_0 <anchor 1023 0> mark @POS_2_0_MARK_2;
-	pos base Zdotaccent <anchor 1023 1826> mark @POS_2_0_MARK_0 <anchor 1023 0> mark @POS_2_0_MARK_2;
-	pos base R.ss02 <anchor 1044 1536> mark @POS_2_0_MARK_0 <anchor 1044 0> mark @POS_2_0_MARK_2;
-	pos base a <anchor 804 1152> mark @POS_2_0_MARK_0 <anchor 780 0> mark @POS_2_0_MARK_2 <anchor 1413 20> mark @POS_2_0_MARK_3;
-	pos base aacute <anchor 868 1918> mark @POS_2_0_MARK_0 <anchor 780 0> mark @POS_2_0_MARK_2 <anchor 1413 20> mark @POS_2_0_MARK_3;
-	pos base abreve <anchor 804 1627> mark @POS_2_0_MARK_0 <anchor 780 0> mark @POS_2_0_MARK_2 <anchor 1413 20> mark @POS_2_0_MARK_3;
-	pos base uni01CE <anchor 804 1882> mark @POS_2_0_MARK_0 <anchor 780 0> mark @POS_2_0_MARK_2 <anchor 1413 20> mark @POS_2_0_MARK_3;
-	pos base acircumflex <anchor 804 1886> mark @POS_2_0_MARK_0 <anchor 780 0> mark @POS_2_0_MARK_2 <anchor 1413 20> mark @POS_2_0_MARK_3;
-	pos base uni0201 <anchor 804 1152> mark @POS_2_0_MARK_0 <anchor 780 0> mark @POS_2_0_MARK_2 <anchor 1413 20> mark @POS_2_0_MARK_3;
-	pos base adieresis <anchor 804 1599> mark @POS_2_0_MARK_0 <anchor 780 0> mark @POS_2_0_MARK_2 <anchor 1413 20> mark @POS_2_0_MARK_3;
-	pos base uni0227 <anchor 804 1442> mark @POS_2_0_MARK_0 <anchor 780 0> mark @POS_2_0_MARK_2 <anchor 1413 20> mark @POS_2_0_MARK_3;
-	pos base agrave <anchor 866 1916> mark @POS_2_0_MARK_0 <anchor 780 0> mark @POS_2_0_MARK_2 <anchor 1413 20> mark @POS_2_0_MARK_3;
-	pos base uni0203 <anchor 804 1629> mark @POS_2_0_MARK_0 <anchor 780 0> mark @POS_2_0_MARK_2 <anchor 1413 20> mark @POS_2_0_MARK_3;
-	pos base amacron <anchor 804 1465> mark @POS_2_0_MARK_0 <anchor 780 0> mark @POS_2_0_MARK_2 <anchor 1413 20> mark @POS_2_0_MARK_3;
-	pos base aogonek <anchor 804 1152> mark @POS_2_0_MARK_0 <anchor 780 0> mark @POS_2_0_MARK_2 <anchor 1413 20> mark @POS_2_0_MARK_3;
-	pos base aring <anchor 804 1890> mark @POS_2_0_MARK_0 <anchor 780 0> mark @POS_2_0_MARK_2 <anchor 1413 20> mark @POS_2_0_MARK_3;
-	pos base aringacute <anchor 868 2656> mark @POS_2_0_MARK_0 <anchor 780 0> mark @POS_2_0_MARK_2 <anchor 1413 20> mark @POS_2_0_MARK_3;
-	pos base atilde <anchor 804 1599> mark @POS_2_0_MARK_0 <anchor 780 0> mark @POS_2_0_MARK_2 <anchor 1413 20> mark @POS_2_0_MARK_3;
-	pos base ae <anchor 1386 1152> mark @POS_2_0_MARK_0 <anchor 1376 0> mark @POS_2_0_MARK_2;
-	pos base aeacute <anchor 1450 1918> mark @POS_2_0_MARK_0 <anchor 1376 0> mark @POS_2_0_MARK_2;
-	pos base uni01E3 <anchor 1386 1465> mark @POS_2_0_MARK_0 <anchor 1376 0> mark @POS_2_0_MARK_2;
-	pos base b <anchor 834 1407> mark @POS_2_0_MARK_0 <anchor 819 0> mark @POS_2_0_MARK_2;
-	pos base uni1E03 <anchor 834 1697> mark @POS_2_0_MARK_0 <anchor 819 0> mark @POS_2_0_MARK_2;
-	pos base c <anchor 786 1152> mark @POS_2_0_MARK_0 <anchor 786 0> mark @POS_2_0_MARK_2;
-	pos base cacute <anchor 850 1918> mark @POS_2_0_MARK_0 <anchor 786 0> mark @POS_2_0_MARK_2;
-	pos base ccaron <anchor 786 1882> mark @POS_2_0_MARK_0 <anchor 786 0> mark @POS_2_0_MARK_2;
-	pos base ccedilla <anchor 786 1152> mark @POS_2_0_MARK_0 <anchor 899 -544> mark @POS_2_0_MARK_2;
-	pos base ccircumflex <anchor 786 1886> mark @POS_2_0_MARK_0 <anchor 786 0> mark @POS_2_0_MARK_2;
-	pos base cdotaccent <anchor 786 1442> mark @POS_2_0_MARK_0 <anchor 786 0> mark @POS_2_0_MARK_2;
-	pos base d <anchor 768 1340> mark @POS_2_0_MARK_0 <anchor 1667 1606> mark @POS_2_0_MARK_1 <anchor 819 0> mark @POS_2_0_MARK_2;
-	pos base dcaron <anchor 768 1340> mark @POS_2_0_MARK_0 <anchor 1667 1606> mark @POS_2_0_MARK_1 <anchor 819 0> mark @POS_2_0_MARK_2;
-	pos base uni1E0B <anchor 768 1630> mark @POS_2_0_MARK_0 <anchor 1667 1606> mark @POS_2_0_MARK_1 <anchor 819 0> mark @POS_2_0_MARK_2;
-	pos base uni01F3 <anchor 1667 1606> mark @POS_2_0_MARK_1;
-	pos base uni01C6 <anchor 1667 1606> mark @POS_2_0_MARK_1;
-	pos base eth <anchor 992 1638> mark @POS_2_0_MARK_0 <anchor 992 0> mark @POS_2_0_MARK_2;
-	pos base e <anchor 784 1152> mark @POS_2_0_MARK_0 <anchor 784 0> mark @POS_2_0_MARK_2 <anchor 1063 20> mark @POS_2_0_MARK_3;
-	pos base eacute <anchor 848 1918> mark @POS_2_0_MARK_0 <anchor 784 0> mark @POS_2_0_MARK_2 <anchor 1063 20> mark @POS_2_0_MARK_3;
-	pos base ebreve <anchor 784 1627> mark @POS_2_0_MARK_0 <anchor 784 0> mark @POS_2_0_MARK_2 <anchor 1063 20> mark @POS_2_0_MARK_3;
-	pos base ecaron <anchor 784 1882> mark @POS_2_0_MARK_0 <anchor 784 0> mark @POS_2_0_MARK_2 <anchor 1063 20> mark @POS_2_0_MARK_3;
-	pos base uni0229 <anchor 784 1152> mark @POS_2_0_MARK_0 <anchor 897 -544> mark @POS_2_0_MARK_2 <anchor 1063 20> mark @POS_2_0_MARK_3;
-	pos base ecircumflex <anchor 784 1886> mark @POS_2_0_MARK_0 <anchor 784 0> mark @POS_2_0_MARK_2 <anchor 1063 20> mark @POS_2_0_MARK_3;
-	pos base uni0205 <anchor 784 1152> mark @POS_2_0_MARK_0 <anchor 784 0> mark @POS_2_0_MARK_2 <anchor 1063 20> mark @POS_2_0_MARK_3;
-	pos base edieresis <anchor 784 1599> mark @POS_2_0_MARK_0 <anchor 784 0> mark @POS_2_0_MARK_2 <anchor 1063 20> mark @POS_2_0_MARK_3;
-	pos base edotaccent <anchor 784 1442> mark @POS_2_0_MARK_0 <anchor 784 0> mark @POS_2_0_MARK_2 <anchor 1063 20> mark @POS_2_0_MARK_3;
-	pos base egrave <anchor 846 1916> mark @POS_2_0_MARK_0 <anchor 784 0> mark @POS_2_0_MARK_2 <anchor 1063 20> mark @POS_2_0_MARK_3;
-	pos base uni0207 <anchor 784 1629> mark @POS_2_0_MARK_0 <anchor 784 0> mark @POS_2_0_MARK_2 <anchor 1063 20> mark @POS_2_0_MARK_3;
-	pos base emacron <anchor 784 1465> mark @POS_2_0_MARK_0 <anchor 784 0> mark @POS_2_0_MARK_2 <anchor 1063 20> mark @POS_2_0_MARK_3;
-	pos base eogonek <anchor 784 1152> mark @POS_2_0_MARK_0 <anchor 784 0> mark @POS_2_0_MARK_2 <anchor 1063 20> mark @POS_2_0_MARK_3;
-	pos base uni1EBD <anchor 784 1599> mark @POS_2_0_MARK_0 <anchor 784 0> mark @POS_2_0_MARK_2 <anchor 1063 20> mark @POS_2_0_MARK_3;
-	pos base f <anchor 713 1468> mark @POS_2_0_MARK_0 <anchor 528 0> mark @POS_2_0_MARK_2;
-	pos base uni1E1F <anchor 713 1758> mark @POS_2_0_MARK_0 <anchor 528 0> mark @POS_2_0_MARK_2;
-	pos base g <anchor 806 1152> mark @POS_2_0_MARK_0 <anchor 806 -410> mark @POS_2_0_MARK_2;
-	pos base uni01F5 <anchor 870 1918> mark @POS_2_0_MARK_0 <anchor 806 -410> mark @POS_2_0_MARK_2;
-	pos base gbreve <anchor 806 1627> mark @POS_2_0_MARK_0 <anchor 806 -410> mark @POS_2_0_MARK_2;
-	pos base gcaron <anchor 806 1882> mark @POS_2_0_MARK_0 <anchor 806 -410> mark @POS_2_0_MARK_2;
-	pos base gcircumflex <anchor 806 1886> mark @POS_2_0_MARK_0 <anchor 806 -410> mark @POS_2_0_MARK_2;
-	pos base uni0123 <anchor 841 1598> mark @POS_2_0_MARK_0 <anchor 806 -410> mark @POS_2_0_MARK_2;
-	pos base gdotaccent <anchor 806 1442> mark @POS_2_0_MARK_0 <anchor 806 -410> mark @POS_2_0_MARK_2;
-	pos base h <anchor 802 1489> mark @POS_2_0_MARK_0 <anchor 802 0> mark @POS_2_0_MARK_2;
-	pos base uni021F <anchor 802 2219> mark @POS_2_0_MARK_0 <anchor 802 0> mark @POS_2_0_MARK_2;
-	pos base hcircumflex <anchor 802 2223> mark @POS_2_0_MARK_0 <anchor 802 0> mark @POS_2_0_MARK_2;
-	pos base i <anchor 224 1442> mark @POS_2_0_MARK_0 <anchor 291 0> mark @POS_2_0_MARK_2 <anchor 320 0> mark @POS_2_0_MARK_3;
-	pos base dotlessi <anchor 224 1152> mark @POS_2_0_MARK_0 <anchor 224 0> mark @POS_2_0_MARK_2 <anchor 320 0> mark @POS_2_0_MARK_3;
-	pos base iacute <anchor 288 1918> mark @POS_2_0_MARK_0 <anchor 224 0> mark @POS_2_0_MARK_2 <anchor 320 0> mark @POS_2_0_MARK_3;
-	pos base ibreve <anchor 224 1627> mark @POS_2_0_MARK_0 <anchor 224 0> mark @POS_2_0_MARK_2 <anchor 320 0> mark @POS_2_0_MARK_3;
-	pos base uni01D0 <anchor 224 1882> mark @POS_2_0_MARK_0 <anchor 224 0> mark @POS_2_0_MARK_2 <anchor 320 0> mark @POS_2_0_MARK_3;
-	pos base icircumflex <anchor 224 1886> mark @POS_2_0_MARK_0 <anchor 224 0> mark @POS_2_0_MARK_2 <anchor 320 0> mark @POS_2_0_MARK_3;
-	pos base uni0209 <anchor 224 1152> mark @POS_2_0_MARK_0 <anchor 224 0> mark @POS_2_0_MARK_2 <anchor 320 0> mark @POS_2_0_MARK_3;
-	pos base idieresis <anchor 224 1599> mark @POS_2_0_MARK_0 <anchor 224 0> mark @POS_2_0_MARK_2 <anchor 320 0> mark @POS_2_0_MARK_3;
-	pos base i.loclTRK <anchor 224 1442> mark @POS_2_0_MARK_0 <anchor 224 0> mark @POS_2_0_MARK_2 <anchor 320 0> mark @POS_2_0_MARK_3;
-	pos base igrave <anchor 286 1916> mark @POS_2_0_MARK_0 <anchor 224 0> mark @POS_2_0_MARK_2 <anchor 320 0> mark @POS_2_0_MARK_3;
-	pos base uni020B <anchor 224 1629> mark @POS_2_0_MARK_0 <anchor 224 0> mark @POS_2_0_MARK_2 <anchor 320 0> mark @POS_2_0_MARK_3;
-	pos base imacron <anchor 224 1465> mark @POS_2_0_MARK_0 <anchor 224 0> mark @POS_2_0_MARK_2 <anchor 320 0> mark @POS_2_0_MARK_3;
-	pos base iogonek <anchor 224 1442> mark @POS_2_0_MARK_0 <anchor 224 0> mark @POS_2_0_MARK_2 <anchor 320 0> mark @POS_2_0_MARK_3;
-	pos base itilde <anchor 224 1599> mark @POS_2_0_MARK_0 <anchor 224 0> mark @POS_2_0_MARK_2 <anchor 320 0> mark @POS_2_0_MARK_3;
-	pos base ij <anchor 224 1442> mark @POS_2_0_MARK_0 <anchor 291 0> mark @POS_2_0_MARK_2 <anchor 320 0> mark @POS_2_0_MARK_3;
-	pos base uni0237 <anchor 384 1152> mark @POS_2_0_MARK_0 <anchor 304 -410> mark @POS_2_0_MARK_2;
-	pos base uni01F0 <anchor 384 1882> mark @POS_2_0_MARK_0 <anchor 304 -410> mark @POS_2_0_MARK_2;
-	pos base jcircumflex <anchor 384 1886> mark @POS_2_0_MARK_0 <anchor 304 -410> mark @POS_2_0_MARK_2;
-	pos base k <anchor 230 1536> mark @POS_2_0_MARK_0 <anchor 723 0> mark @POS_2_0_MARK_2;
-	pos base uni01E9 <anchor 230 2266> mark @POS_2_0_MARK_0 <anchor 723 0> mark @POS_2_0_MARK_2;
-	pos base uni0137 <anchor 230 1536> mark @POS_2_0_MARK_0 <anchor 691 -536> mark @POS_2_0_MARK_2;
-	pos base kgreenlandic <anchor 704 1152> mark @POS_2_0_MARK_0 <anchor 704 0> mark @POS_2_0_MARK_2;
-	pos base l <anchor 444 1465> mark @POS_2_0_MARK_0 <anchor 483 1606> mark @POS_2_0_MARK_1 <anchor 288 0> mark @POS_2_0_MARK_2;
-	pos base lacute <anchor 508 2231> mark @POS_2_0_MARK_0 <anchor 483 1606> mark @POS_2_0_MARK_1 <anchor 288 0> mark @POS_2_0_MARK_2;
-	pos base lcaron <anchor 444 1465> mark @POS_2_0_MARK_0 <anchor 483 1606> mark @POS_2_0_MARK_1 <anchor 288 0> mark @POS_2_0_MARK_2;
-	pos base uni013C <anchor 444 1465> mark @POS_2_0_MARK_0 <anchor 483 1606> mark @POS_2_0_MARK_1 <anchor 256 -536> mark @POS_2_0_MARK_2;
-	pos base ldot <anchor 444 1465> mark @POS_2_0_MARK_0 <anchor 483 1606> mark @POS_2_0_MARK_1 <anchor 288 0> mark @POS_2_0_MARK_2;
-	pos base uni01C9 <anchor 444 1465> mark @POS_2_0_MARK_0 <anchor 483 1606> mark @POS_2_0_MARK_1 <anchor 288 0> mark @POS_2_0_MARK_2;
-	pos base m <anchor 1237 1152> mark @POS_2_0_MARK_0 <anchor 1237 0> mark @POS_2_0_MARK_2;
-	pos base uni1E41 <anchor 1237 1442> mark @POS_2_0_MARK_0 <anchor 1237 0> mark @POS_2_0_MARK_2;
-	pos base n <anchor 801 1152> mark @POS_2_0_MARK_0 <anchor 801 0> mark @POS_2_0_MARK_2;
-	pos base nacute <anchor 865 1918> mark @POS_2_0_MARK_0 <anchor 801 0> mark @POS_2_0_MARK_2;
-	pos base napostrophe <anchor 865 1152> mark @POS_2_0_MARK_0 <anchor 865 0> mark @POS_2_0_MARK_2;
-	pos base ncaron <anchor 801 1882> mark @POS_2_0_MARK_0 <anchor 801 0> mark @POS_2_0_MARK_2;
-	pos base uni0146 <anchor 801 1152> mark @POS_2_0_MARK_0 <anchor 769 -536> mark @POS_2_0_MARK_2;
-	pos base uni01F9 <anchor 863 1916> mark @POS_2_0_MARK_0 <anchor 801 0> mark @POS_2_0_MARK_2;
-	pos base uni01CC <anchor 801 1152> mark @POS_2_0_MARK_0 <anchor 801 0> mark @POS_2_0_MARK_2;
-	pos base ntilde <anchor 801 1599> mark @POS_2_0_MARK_0 <anchor 801 0> mark @POS_2_0_MARK_2;
-	pos base eng <anchor 865 1152> mark @POS_2_0_MARK_0 <anchor 865 0> mark @POS_2_0_MARK_2;
-	pos base o <anchor 801 1152> mark @POS_2_0_MARK_0 <anchor 1582 1152> mark @POS_2_0_MARK_1 <anchor 801 0> mark @POS_2_0_MARK_2 <anchor 896 20> mark @POS_2_0_MARK_3;
-	pos base oacute <anchor 865 1918> mark @POS_2_0_MARK_0 <anchor 1582 1152> mark @POS_2_0_MARK_1 <anchor 801 0> mark @POS_2_0_MARK_2 <anchor 896 20> mark @POS_2_0_MARK_3;
-	pos base obreve <anchor 801 1627> mark @POS_2_0_MARK_0 <anchor 1582 1152> mark @POS_2_0_MARK_1 <anchor 801 0> mark @POS_2_0_MARK_2 <anchor 896 20> mark @POS_2_0_MARK_3;
-	pos base uni01D2 <anchor 801 1882> mark @POS_2_0_MARK_0 <anchor 1582 1152> mark @POS_2_0_MARK_1 <anchor 801 0> mark @POS_2_0_MARK_2 <anchor 896 20> mark @POS_2_0_MARK_3;
-	pos base ocircumflex <anchor 801 1886> mark @POS_2_0_MARK_0 <anchor 1582 1152> mark @POS_2_0_MARK_1 <anchor 801 0> mark @POS_2_0_MARK_2 <anchor 896 20> mark @POS_2_0_MARK_3;
-	pos base uni020D <anchor 801 1152> mark @POS_2_0_MARK_0 <anchor 1582 1152> mark @POS_2_0_MARK_1 <anchor 801 0> mark @POS_2_0_MARK_2 <anchor 896 20> mark @POS_2_0_MARK_3;
-	pos base odieresis <anchor 801 1599> mark @POS_2_0_MARK_0 <anchor 1582 1152> mark @POS_2_0_MARK_1 <anchor 801 0> mark @POS_2_0_MARK_2 <anchor 896 20> mark @POS_2_0_MARK_3;
-	pos base uni022F <anchor 801 1442> mark @POS_2_0_MARK_0 <anchor 1582 1152> mark @POS_2_0_MARK_1 <anchor 801 0> mark @POS_2_0_MARK_2 <anchor 896 20> mark @POS_2_0_MARK_3;
-	pos base ograve <anchor 863 1916> mark @POS_2_0_MARK_0 <anchor 1582 1152> mark @POS_2_0_MARK_1 <anchor 801 0> mark @POS_2_0_MARK_2 <anchor 896 20> mark @POS_2_0_MARK_3;
-	pos base ohungarumlaut <anchor 1087 1880> mark @POS_2_0_MARK_0 <anchor 1582 1152> mark @POS_2_0_MARK_1 <anchor 801 0> mark @POS_2_0_MARK_2 <anchor 896 20> mark @POS_2_0_MARK_3;
-	pos base uni020F <anchor 801 1629> mark @POS_2_0_MARK_0 <anchor 1582 1152> mark @POS_2_0_MARK_1 <anchor 801 0> mark @POS_2_0_MARK_2 <anchor 896 20> mark @POS_2_0_MARK_3;
-	pos base omacron <anchor 801 1465> mark @POS_2_0_MARK_0 <anchor 1582 1152> mark @POS_2_0_MARK_1 <anchor 801 0> mark @POS_2_0_MARK_2 <anchor 896 20> mark @POS_2_0_MARK_3;
-	pos base uni01EB <anchor 801 1152> mark @POS_2_0_MARK_0 <anchor 1582 1152> mark @POS_2_0_MARK_1 <anchor 801 0> mark @POS_2_0_MARK_2 <anchor 896 20> mark @POS_2_0_MARK_3;
-	pos base oslash <anchor 801 1152> mark @POS_2_0_MARK_0 <anchor 1582 1152> mark @POS_2_0_MARK_1 <anchor 801 0> mark @POS_2_0_MARK_2 <anchor 896 20> mark @POS_2_0_MARK_3;
-	pos base oslashacute <anchor 865 1918> mark @POS_2_0_MARK_0 <anchor 1582 1152> mark @POS_2_0_MARK_1 <anchor 801 0> mark @POS_2_0_MARK_2 <anchor 896 20> mark @POS_2_0_MARK_3;
-	pos base otilde <anchor 801 1599> mark @POS_2_0_MARK_0 <anchor 1582 1152> mark @POS_2_0_MARK_1 <anchor 801 0> mark @POS_2_0_MARK_2 <anchor 896 20> mark @POS_2_0_MARK_3;
-	pos base oe <anchor 1408 1152> mark @POS_2_0_MARK_0 <anchor 1408 0> mark @POS_2_0_MARK_2;
-	pos base p <anchor 819 1152> mark @POS_2_0_MARK_0 <anchor 819 0> mark @POS_2_0_MARK_2;
-	pos base uni1E57 <anchor 819 1442> mark @POS_2_0_MARK_0 <anchor 819 0> mark @POS_2_0_MARK_2;
-	pos base thorn <anchor 800 1152> mark @POS_2_0_MARK_0 <anchor 800 0> mark @POS_2_0_MARK_2;
-	pos base q <anchor 819 1152> mark @POS_2_0_MARK_0 <anchor 819 0> mark @POS_2_0_MARK_2;
-	pos base r <anchor 507 1152> mark @POS_2_0_MARK_0 <anchor 244 0> mark @POS_2_0_MARK_2;
-	pos base racute <anchor 571 1918> mark @POS_2_0_MARK_0 <anchor 244 0> mark @POS_2_0_MARK_2;
-	pos base rcaron <anchor 507 1882> mark @POS_2_0_MARK_0 <anchor 244 0> mark @POS_2_0_MARK_2;
-	pos base uni0157 <anchor 507 1152> mark @POS_2_0_MARK_0 <anchor 212 -536> mark @POS_2_0_MARK_2;
-	pos base uni0211 <anchor 507 1152> mark @POS_2_0_MARK_0 <anchor 244 0> mark @POS_2_0_MARK_2;
-	pos base uni0213 <anchor 507 1629> mark @POS_2_0_MARK_0 <anchor 244 0> mark @POS_2_0_MARK_2;
-	pos base s <anchor 795 1152> mark @POS_2_0_MARK_0 <anchor 795 0> mark @POS_2_0_MARK_2;
-	pos base sacute <anchor 859 1918> mark @POS_2_0_MARK_0 <anchor 795 0> mark @POS_2_0_MARK_2;
-	pos base scaron <anchor 795 1882> mark @POS_2_0_MARK_0 <anchor 795 0> mark @POS_2_0_MARK_2;
-	pos base scedilla <anchor 795 1152> mark @POS_2_0_MARK_0 <anchor 908 -544> mark @POS_2_0_MARK_2;
-	pos base scircumflex <anchor 795 1886> mark @POS_2_0_MARK_0 <anchor 795 0> mark @POS_2_0_MARK_2;
-	pos base uni0219 <anchor 795 1152> mark @POS_2_0_MARK_0 <anchor 763 -536> mark @POS_2_0_MARK_2;
-	pos base uni1E61 <anchor 795 1442> mark @POS_2_0_MARK_0 <anchor 795 0> mark @POS_2_0_MARK_2;
-	pos base germandbls <anchor 1024 1638> mark @POS_2_0_MARK_0 <anchor 1024 0> mark @POS_2_0_MARK_2;
-	pos base t <anchor 659 1427> mark @POS_2_0_MARK_0 <anchor 571 1767> mark @POS_2_0_MARK_1 <anchor 649 0> mark @POS_2_0_MARK_2;
-	pos base tbar <anchor 723 1427> mark @POS_2_0_MARK_0 <anchor 635 1767> mark @POS_2_0_MARK_1 <anchor 713 0> mark @POS_2_0_MARK_2;
-	pos base tcaron <anchor 659 1427> mark @POS_2_0_MARK_0 <anchor 571 1767> mark @POS_2_0_MARK_1 <anchor 649 0> mark @POS_2_0_MARK_2;
-	pos base uni021B <anchor 659 1427> mark @POS_2_0_MARK_0 <anchor 571 1767> mark @POS_2_0_MARK_1 <anchor 617 -536> mark @POS_2_0_MARK_2;
-	pos base uni1E6B <anchor 659 1717> mark @POS_2_0_MARK_0 <anchor 571 1767> mark @POS_2_0_MARK_1 <anchor 649 0> mark @POS_2_0_MARK_2;
-	pos base u <anchor 801 1152> mark @POS_2_0_MARK_0 <anchor 1581 1152> mark @POS_2_0_MARK_1 <anchor 801 0> mark @POS_2_0_MARK_2 <anchor 1411 20> mark @POS_2_0_MARK_3;
-	pos base uacute <anchor 865 1918> mark @POS_2_0_MARK_0 <anchor 1581 1152> mark @POS_2_0_MARK_1 <anchor 801 0> mark @POS_2_0_MARK_2 <anchor 1411 20> mark @POS_2_0_MARK_3;
-	pos base ubreve <anchor 801 1627> mark @POS_2_0_MARK_0 <anchor 1581 1152> mark @POS_2_0_MARK_1 <anchor 801 0> mark @POS_2_0_MARK_2 <anchor 1411 20> mark @POS_2_0_MARK_3;
-	pos base uni01D4 <anchor 801 1882> mark @POS_2_0_MARK_0 <anchor 1581 1152> mark @POS_2_0_MARK_1 <anchor 801 0> mark @POS_2_0_MARK_2 <anchor 1411 20> mark @POS_2_0_MARK_3;
-	pos base ucircumflex <anchor 801 1886> mark @POS_2_0_MARK_0 <anchor 1581 1152> mark @POS_2_0_MARK_1 <anchor 801 0> mark @POS_2_0_MARK_2 <anchor 1411 20> mark @POS_2_0_MARK_3;
-	pos base uni0215 <anchor 801 1152> mark @POS_2_0_MARK_0 <anchor 1581 1152> mark @POS_2_0_MARK_1 <anchor 801 0> mark @POS_2_0_MARK_2 <anchor 1411 20> mark @POS_2_0_MARK_3;
-	pos base udieresis <anchor 801 1599> mark @POS_2_0_MARK_0 <anchor 1581 1152> mark @POS_2_0_MARK_1 <anchor 801 0> mark @POS_2_0_MARK_2 <anchor 1411 20> mark @POS_2_0_MARK_3;
-	pos base ugrave <anchor 863 1916> mark @POS_2_0_MARK_0 <anchor 1581 1152> mark @POS_2_0_MARK_1 <anchor 801 0> mark @POS_2_0_MARK_2 <anchor 1411 20> mark @POS_2_0_MARK_3;
-	pos base uhungarumlaut <anchor 1087 1880> mark @POS_2_0_MARK_0 <anchor 1581 1152> mark @POS_2_0_MARK_1 <anchor 801 0> mark @POS_2_0_MARK_2 <anchor 1411 20> mark @POS_2_0_MARK_3;
-	pos base uni0217 <anchor 801 1629> mark @POS_2_0_MARK_0 <anchor 1581 1152> mark @POS_2_0_MARK_1 <anchor 801 0> mark @POS_2_0_MARK_2 <anchor 1411 20> mark @POS_2_0_MARK_3;
-	pos base umacron <anchor 801 1465> mark @POS_2_0_MARK_0 <anchor 1581 1152> mark @POS_2_0_MARK_1 <anchor 801 0> mark @POS_2_0_MARK_2 <anchor 1411 20> mark @POS_2_0_MARK_3;
-	pos base uogonek <anchor 801 1152> mark @POS_2_0_MARK_0 <anchor 1581 1152> mark @POS_2_0_MARK_1 <anchor 801 0> mark @POS_2_0_MARK_2 <anchor 1411 20> mark @POS_2_0_MARK_3;
-	pos base uring <anchor 801 1890> mark @POS_2_0_MARK_0 <anchor 1581 1152> mark @POS_2_0_MARK_1 <anchor 801 0> mark @POS_2_0_MARK_2 <anchor 1411 20> mark @POS_2_0_MARK_3;
-	pos base utilde <anchor 801 1599> mark @POS_2_0_MARK_0 <anchor 1581 1152> mark @POS_2_0_MARK_1 <anchor 801 0> mark @POS_2_0_MARK_2 <anchor 1411 20> mark @POS_2_0_MARK_3;
-	pos base v <anchor 794 1152> mark @POS_2_0_MARK_0 <anchor 794 0> mark @POS_2_0_MARK_2;
-	pos base w <anchor 1120 1152> mark @POS_2_0_MARK_0 <anchor 1120 0> mark @POS_2_0_MARK_2;
-	pos base wacute <anchor 1184 1918> mark @POS_2_0_MARK_0 <anchor 1120 0> mark @POS_2_0_MARK_2;
-	pos base wcircumflex <anchor 1120 1886> mark @POS_2_0_MARK_0 <anchor 1120 0> mark @POS_2_0_MARK_2;
-	pos base wdieresis <anchor 1120 1599> mark @POS_2_0_MARK_0 <anchor 1120 0> mark @POS_2_0_MARK_2;
-	pos base wgrave <anchor 1182 1916> mark @POS_2_0_MARK_0 <anchor 1120 0> mark @POS_2_0_MARK_2;
-	pos base x <anchor 814 1152> mark @POS_2_0_MARK_0 <anchor 814 0> mark @POS_2_0_MARK_2;
-	pos base y <anchor 784 1152> mark @POS_2_0_MARK_0 <anchor 784 0> mark @POS_2_0_MARK_2;
-	pos base yacute <anchor 848 1918> mark @POS_2_0_MARK_0 <anchor 784 0> mark @POS_2_0_MARK_2;
-	pos base ycircumflex <anchor 784 1886> mark @POS_2_0_MARK_0 <anchor 784 0> mark @POS_2_0_MARK_2;
-	pos base ydieresis <anchor 784 1599> mark @POS_2_0_MARK_0 <anchor 784 0> mark @POS_2_0_MARK_2;
-	pos base ygrave <anchor 846 1916> mark @POS_2_0_MARK_0 <anchor 784 0> mark @POS_2_0_MARK_2;
-	pos base uni0233 <anchor 784 1465> mark @POS_2_0_MARK_0 <anchor 784 0> mark @POS_2_0_MARK_2;
-	pos base uni1EF9 <anchor 784 1599> mark @POS_2_0_MARK_0 <anchor 784 0> mark @POS_2_0_MARK_2;
-	pos base z <anchor 736 1152> mark @POS_2_0_MARK_0 <anchor 736 0> mark @POS_2_0_MARK_2;
-	pos base zacute <anchor 800 1918> mark @POS_2_0_MARK_0 <anchor 736 0> mark @POS_2_0_MARK_2;
-	pos base zcaron <anchor 736 1882> mark @POS_2_0_MARK_0 <anchor 736 0> mark @POS_2_0_MARK_2;
-	pos base zdotaccent <anchor 736 1442> mark @POS_2_0_MARK_0 <anchor 736 0> mark @POS_2_0_MARK_2;
-	pos base a.ss01 <anchor 780 1152> mark @POS_2_0_MARK_0 <anchor 780 0> mark @POS_2_0_MARK_2 <anchor 1404 10> mark @POS_2_0_MARK_3;
-	pos base ordfeminine <anchor 756 1546> mark @POS_2_0_MARK_0 <anchor 756 437> mark @POS_2_0_MARK_2 <anchor 1365 456> mark @POS_2_0_MARK_3;
-	pos base dollar <anchor 1071 1536> mark @POS_2_0_MARK_0 <anchor 1071 0> mark @POS_2_0_MARK_2;
-} POS_2;
-lookup POS_3 {
-} POS_3;
-script latn;
-language dflt;
-lookup POS_2;
-lookup POS_3;
-language AZE;
-lookup POS_2;
-lookup POS_3;
-language CAT;
-lookup POS_2;
-lookup POS_3;
-language CRT;
-lookup POS_2;
-lookup POS_3;
-language KAZ;
-lookup POS_2;
-lookup POS_3;
-language MOL;
-lookup POS_2;
-lookup POS_3;
-language ROM;
-lookup POS_2;
-lookup POS_3;
-language TAT;
-lookup POS_2;
-lookup POS_3;
-language TRK;
-lookup POS_2;
-lookup POS_3;
+automatic = 1;
+code = "sub one by onesuperior;
+sub two by twosuperior;
+sub three by threesuperior;
+sub four by foursuperior;
 ";
-tag = mark;
+tag = sups;
 },
 {
-code = "script DFLT;
-language dflt;
-lookup POS_4 {
-	lookupflag UseMarkFilteringSet [uni0326 uni0327];
-	markClass uni0326 <anchor 224 0> @POS_4_0_MARK_0;
-	markClass uni0327 <anchor 207 0> @POS_4_0_MARK_0;
-	pos mark uni0326 <anchor 192 -536> mark @POS_4_0_MARK_0;
-	pos mark uni0327 <anchor 320 -544> mark @POS_4_0_MARK_0;
-} POS_4;
-lookup POS_5 {
-	lookupflag UseMarkFilteringSet [uni0308 uni0307 gravecomb acutecomb uni030B uni0302 uni030C uni0306 uni030A tildecomb uni0304 uni0311 uni0312];
-	markClass uni0308 <anchor 544 1152> @POS_5_0_MARK_0;
-	markClass uni0307 <anchor 224 1152> @POS_5_0_MARK_0;
-	markClass gravecomb <anchor 418 1092> @POS_5_0_MARK_0;
-	markClass acutecomb <anchor 416 1152> @POS_5_0_MARK_0;
-	markClass uni030B <anchor 471 1128> @POS_5_0_MARK_0;
-	markClass uni0302 <anchor 544 1152> @POS_5_0_MARK_0;
-	markClass uni030C <anchor 544 1152> @POS_5_0_MARK_0;
-	markClass uni0306 <anchor 640 1152> @POS_5_0_MARK_0;
-	markClass uni030A <anchor 640 1152> @POS_5_0_MARK_0;
-	markClass tildecomb <anchor 576 1152> @POS_5_0_MARK_0;
-	markClass uni0304 <anchor 512 1152> @POS_5_0_MARK_0;
-	markClass uni0311 <anchor 640 1152> @POS_5_0_MARK_0;
-	markClass uni0312 <anchor 157 1152> @POS_5_0_MARK_0;
-	pos mark uni0308 <anchor 544 1599> mark @POS_5_0_MARK_0;
-	pos mark uni0307 <anchor 224 1442> mark @POS_5_0_MARK_0;
-	pos mark gravecomb <anchor 480 1856> mark @POS_5_0_MARK_0;
-	pos mark acutecomb <anchor 480 1918> mark @POS_5_0_MARK_0;
-	pos mark uni030B <anchor 757 1856> mark @POS_5_0_MARK_0;
-	pos mark uni0302 <anchor 544 1886> mark @POS_5_0_MARK_0;
-	pos mark uni030C <anchor 544 1882> mark @POS_5_0_MARK_0;
-	pos mark uni0306 <anchor 640 1627> mark @POS_5_0_MARK_0;
-	pos mark uni030A <anchor 640 1890> mark @POS_5_0_MARK_0;
-	pos mark tildecomb <anchor 576 1599> mark @POS_5_0_MARK_0;
-	pos mark uni0304 <anchor 512 1465> mark @POS_5_0_MARK_0;
-	pos mark uni0311 <anchor 640 1629> mark @POS_5_0_MARK_0;
-	pos mark uni0312 <anchor 192 1598> mark @POS_5_0_MARK_0;
-} POS_5;
-script latn;
-language dflt;
-lookup POS_4;
-lookup POS_5;
-language AZE;
-lookup POS_4;
-lookup POS_5;
-language CAT;
-lookup POS_4;
-lookup POS_5;
-language CRT;
-lookup POS_4;
-lookup POS_5;
-language KAZ;
-lookup POS_4;
-lookup POS_5;
-language MOL;
-lookup POS_4;
-lookup POS_5;
-language ROM;
-lookup POS_4;
-lookup POS_5;
-language TAT;
-lookup POS_4;
-lookup POS_5;
-language TRK;
-lookup POS_4;
-lookup POS_5;
+automatic = 1;
+code = "sub [zero one two three four five six seven eight nine] [A a]' by ordfeminine;
+sub [zero one two three four five six seven eight nine] [O o]' by ordmasculine;
 ";
-tag = mkmk;
+tag = ordn;
 }
 );
 fontMaster = (
@@ -11146,218 +10461,6 @@ metricLeft = three.numr;
 unicode = 190;
 },
 {
-glyphname = uni00B9;
-layers = (
-{
-layerId = m01;
-shapes = (
-{
-closed = 1;
-nodes = (
-(576,448,l),
-(768,448,l),
-(768,1536,l),
-(512,1536,l),
-(64,1120,l),
-(160,992,l),
-(576,1376,l)
-);
-}
-);
-width = 938;
-}
-);
-note = uni00B9;
-unicode = 185;
-},
-{
-glyphname = uni00B2;
-layers = (
-{
-layerId = m01;
-shapes = (
-{
-closed = 1;
-nodes = (
-(128,449,l),
-(1186,449,l),
-(1186,609,l),
-(320,609,l),
-(320,734,o),
-(332,756,o),
-(416,783,cs),
-(446,793,o),
-(520,810,o),
-(640,834,cs),
-(898,885,ls),
-(1105,926,o),
-(1216,1010,o),
-(1216,1221,cs),
-(1216,1387,o),
-(1186,1474,o),
-(1082,1523,cs),
-(989,1567,o),
-(838,1569,o),
-(697,1569,cs),
-(652,1569,o),
-(608,1570,o),
-(565,1570,cs),
-(281,1570,o),
-(128,1531,o),
-(128,1249,c),
-(320,1249,l),
-(320,1362,o),
-(332,1383,o),
-(420,1397,cs),
-(467,1405,o),
-(537,1409,o),
-(632,1409,cs),
-(727,1409,o),
-(797,1407,o),
-(842,1405,cs),
-(964,1399,o),
-(1024,1370,o),
-(1024,1243,cs),
-(1024,1091,o),
-(971,1062,o),
-(834,1036,cs),
-(448,963,ls),
-(252,926,o),
-(128,882,o),
-(128,673,cs)
-);
-}
-);
-width = 1344;
-}
-);
-note = uni00B2;
-unicode = 178;
-},
-{
-glyphname = uni00B3;
-layers = (
-{
-layerId = m01;
-shapes = (
-{
-closed = 1;
-nodes = (
-(603,447,o),
-(633,448,o),
-(723,448,cs),
-(1015,448,o),
-(1275,448,o),
-(1275,738,cs),
-(1275,914,o),
-(1246,955,o),
-(1115,1008,c),
-(1223,1042,o),
-(1275,1102,o),
-(1275,1236,cs),
-(1275,1394,o),
-(1244,1487,o),
-(1136,1531,cs),
-(1042,1570,o),
-(871,1568,o),
-(771,1568,cs),
-(634,1568,o),
-(600,1569,o),
-(516,1569,cs),
-(375,1569,o),
-(246,1557,o),
-(174,1488,cs),
-(125,1441,o),
-(100,1362,o),
-(100,1250,c),
-(292,1250,l),
-(292,1376,o),
-(325,1393,o),
-(427,1402,cs),
-(475,1406,o),
-(558,1408,o),
-(637,1408,cs),
-(766,1408,o),
-(841,1409,o),
-(903,1409,cs),
-(1027,1409,o),
-(1082,1381,o),
-(1082,1258,cs),
-(1082,1123,o),
-(1032,1088,o),
-(891,1088,cs),
-(500,1088,l),
-(500,928,l),
-(891,928,ls),
-(1021,928,o),
-(1082,898,o),
-(1082,778,cs),
-(1082,689,o),
-(1068,647,o),
-(1006,626,cs),
-(945,604,o),
-(788,608,o),
-(603,608,cs),
-(565,608,o),
-(497,609,o),
-(427,614,cs),
-(330,621,o),
-(292,627,o),
-(292,735,c),
-(100,735,l),
-(100,635,o),
-(125,564,o),
-(174,522,cs),
-(231,473,o),
-(352,447,o),
-(537,447,cs)
-);
-}
-);
-width = 1403;
-}
-);
-note = uni00B3;
-unicode = 179;
-},
-{
-glyphname = uni2074;
-layers = (
-{
-layerId = m01;
-shapes = (
-{
-closed = 1;
-nodes = (
-(912,447,l),
-(1104,447,l),
-(1104,689,l),
-(1346,689,l),
-(1346,849,l),
-(1104,849,l),
-(1104,1568,l),
-(848,1568,l),
-(80,881,l),
-(80,689,l),
-(912,689,l)
-);
-},
-{
-closed = 1;
-nodes = (
-(272,849,l),
-(912,1420,l),
-(912,849,l)
-);
-}
-);
-width = 1424;
-}
-);
-note = uni2074;
-unicode = 8308;
-},
-{
 glyphname = space;
 layers = (
 {
@@ -12956,154 +12059,6 @@ note = quoteright;
 unicode = 8217;
 },
 {
-glyphname = guillemotleft;
-lastChange = "2024-09-29 23:17:58 +0000";
-layers = (
-{
-layerId = m01;
-shapes = (
-{
-closed = 1;
-nodes = (
-(1056,174,ls),
-(1098,145,o),
-(1136,149,o),
-(1167,191,cs),
-(1168,192,ls),
-(1199,234,o),
-(1192,272,o),
-(1149,302,cs),
-(704,608,l),
-(1149,914,ls),
-(1192,944,o),
-(1198,983,o),
-(1167,1025,cs),
-(1167,1025,ls),
-(1136,1067,o),
-(1098,1071,o),
-(1056,1042,cs),
-(626,739,ls),
-(591,714,o),
-(576,686,o),
-(576,643,cs),
-(576,573,ls),
-(576,530,o),
-(591,502,o),
-(626,477,cs)
-);
-},
-{
-closed = 1;
-nodes = (
-(608,174,ls),
-(650,145,o),
-(688,149,o),
-(719,191,cs),
-(720,192,ls),
-(751,234,o),
-(744,272,o),
-(701,302,cs),
-(256,608,l),
-(701,914,ls),
-(744,944,o),
-(750,983,o),
-(719,1025,cs),
-(719,1025,ls),
-(688,1067,o),
-(650,1071,o),
-(608,1042,cs),
-(178,739,ls),
-(143,714,o),
-(128,686,o),
-(128,643,cs),
-(128,573,ls),
-(128,530,o),
-(143,502,o),
-(178,477,cs)
-);
-}
-);
-width = 1315;
-}
-);
-note = guillemotleft;
-unicode = 171;
-},
-{
-glyphname = guillemotright;
-lastChange = "2024-09-29 23:18:10 +0000";
-layers = (
-{
-layerId = m01;
-shapes = (
-{
-closed = 1;
-nodes = (
-(596,191,ls),
-(627,149,o),
-(665,145,o),
-(707,174,cs),
-(1137,477,ls),
-(1172,502,o),
-(1187,530,o),
-(1187,573,cs),
-(1187,643,ls),
-(1187,686,o),
-(1172,714,o),
-(1137,739,cs),
-(707,1043,ls),
-(665,1072,o),
-(627,1067,o),
-(596,1025,cs),
-(595,1024,ls),
-(564,982,o),
-(571,944,o),
-(614,914,cs),
-(1059,608,l),
-(614,302,ls),
-(571,272,o),
-(564,234,o),
-(595,192,cs)
-);
-},
-{
-closed = 1;
-nodes = (
-(148,191,ls),
-(179,149,o),
-(217,145,o),
-(259,174,cs),
-(689,477,ls),
-(724,502,o),
-(739,530,o),
-(739,573,cs),
-(739,643,ls),
-(739,686,o),
-(724,714,o),
-(689,739,cs),
-(259,1043,ls),
-(217,1072,o),
-(179,1067,o),
-(148,1025,cs),
-(147,1024,ls),
-(116,982,o),
-(123,944,o),
-(166,914,cs),
-(611,608,l),
-(166,302,ls),
-(123,272,o),
-(116,234,o),
-(147,192,cs)
-);
-}
-);
-width = 1315;
-}
-);
-note = guillemotright;
-unicode = 187;
-},
-{
 glyphname = guilsinglleft;
 lastChange = "2024-09-29 23:18:20 +0000";
 layers = (
@@ -14695,111 +13650,6 @@ width = 2142;
 );
 note = dollar;
 unicode = 36;
-},
-{
-glyphname = Euro;
-lastChange = "2024-09-30 04:33:17 +0000";
-layers = (
-{
-layerId = m01;
-shapes = (
-{
-closed = 1;
-nodes = (
-(1409,0,o),
-(1609,84,o),
-(1643,342,cs),
-(1650,395,o),
-(1616,406,o),
-(1563,406,cs),
-(1538,406,ls),
-(1488,406,o),
-(1466,379,o),
-(1456,330,cs),
-(1429,203,o),
-(1269,160,o),
-(1034,160,cs),
-(450,160,o),
-(437,196,o),
-(437,782,cs),
-(437,1368,o),
-(450,1376,o),
-(1034,1376,cs),
-(1269,1376,o),
-(1427,1353,o),
-(1454,1226,cs),
-(1465,1177,o),
-(1487,1151,o),
-(1537,1151,cs),
-(1563,1151,ls),
-(1616,1151,o),
-(1647,1181,o),
-(1640,1234,cs),
-(1605,1494,o),
-(1352,1536,o),
-(1034,1536,cs),
-(420,1536,o),
-(245,1521,o),
-(245,782,cs),
-(245,43,o),
-(420,0,o),
-(1034,0,cs)
-);
-},
-{
-closed = 1;
-nodes = (
-);
-},
-{
-closed = 1;
-nodes = (
-);
-},
-{
-closed = 1;
-nodes = (
-(104,872,o),
-(132,844,o),
-(184,844,cs),
-(1202,844,ls),
-(1254,844,o),
-(1282,872,o),
-(1282,924,cs),
-(1282,976,o),
-(1254,1004,o),
-(1202,1004,cs),
-(184,1004,ls),
-(132,1004,o),
-(104,976,o),
-(104,924,cs)
-);
-},
-{
-closed = 1;
-nodes = (
-(104,560,o),
-(132,532,o),
-(184,532,cs),
-(1202,532,ls),
-(1254,532,o),
-(1282,560,o),
-(1282,612,cs),
-(1282,664,o),
-(1254,692,o),
-(1202,692,cs),
-(184,692,ls),
-(132,692,o),
-(104,664,o),
-(104,612,cs)
-);
-}
-);
-width = 1771;
-}
-);
-note = Euro;
-unicode = 8364;
 },
 {
 glyphname = sterling;
@@ -18997,6 +17847,222 @@ width = 1788;
 unicode = 960;
 },
 {
+glyphname = onesuperior;
+lastChange = "2024-09-30 05:55:33 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(576,448,l),
+(768,448,l),
+(768,1536,l),
+(512,1536,l),
+(64,1120,l),
+(160,992,l),
+(576,1376,l)
+);
+}
+);
+width = 938;
+}
+);
+note = uni00B9;
+unicode = 185;
+},
+{
+glyphname = twosuperior;
+lastChange = "2024-09-30 05:55:33 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(128,449,l),
+(1186,449,l),
+(1186,609,l),
+(320,609,l),
+(320,734,o),
+(332,756,o),
+(416,783,cs),
+(446,793,o),
+(520,810,o),
+(640,834,cs),
+(898,885,ls),
+(1105,926,o),
+(1216,1010,o),
+(1216,1221,cs),
+(1216,1387,o),
+(1186,1474,o),
+(1082,1523,cs),
+(989,1567,o),
+(838,1569,o),
+(697,1569,cs),
+(652,1569,o),
+(608,1570,o),
+(565,1570,cs),
+(281,1570,o),
+(128,1531,o),
+(128,1249,c),
+(320,1249,l),
+(320,1362,o),
+(332,1383,o),
+(420,1397,cs),
+(467,1405,o),
+(537,1409,o),
+(632,1409,cs),
+(727,1409,o),
+(797,1407,o),
+(842,1405,cs),
+(964,1399,o),
+(1024,1370,o),
+(1024,1243,cs),
+(1024,1091,o),
+(971,1062,o),
+(834,1036,cs),
+(448,963,ls),
+(252,926,o),
+(128,882,o),
+(128,673,cs)
+);
+}
+);
+width = 1344;
+}
+);
+note = uni00B2;
+unicode = 178;
+},
+{
+glyphname = threesuperior;
+lastChange = "2024-09-30 05:55:33 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(603,447,o),
+(633,448,o),
+(723,448,cs),
+(1015,448,o),
+(1275,448,o),
+(1275,738,cs),
+(1275,914,o),
+(1246,955,o),
+(1115,1008,c),
+(1223,1042,o),
+(1275,1102,o),
+(1275,1236,cs),
+(1275,1394,o),
+(1244,1487,o),
+(1136,1531,cs),
+(1042,1570,o),
+(871,1568,o),
+(771,1568,cs),
+(634,1568,o),
+(600,1569,o),
+(516,1569,cs),
+(375,1569,o),
+(246,1557,o),
+(174,1488,cs),
+(125,1441,o),
+(100,1362,o),
+(100,1250,c),
+(292,1250,l),
+(292,1376,o),
+(325,1393,o),
+(427,1402,cs),
+(475,1406,o),
+(558,1408,o),
+(637,1408,cs),
+(766,1408,o),
+(841,1409,o),
+(903,1409,cs),
+(1027,1409,o),
+(1082,1381,o),
+(1082,1258,cs),
+(1082,1123,o),
+(1032,1088,o),
+(891,1088,cs),
+(500,1088,l),
+(500,928,l),
+(891,928,ls),
+(1021,928,o),
+(1082,898,o),
+(1082,778,cs),
+(1082,689,o),
+(1068,647,o),
+(1006,626,cs),
+(945,604,o),
+(788,608,o),
+(603,608,cs),
+(565,608,o),
+(497,609,o),
+(427,614,cs),
+(330,621,o),
+(292,627,o),
+(292,735,c),
+(100,735,l),
+(100,635,o),
+(125,564,o),
+(174,522,cs),
+(231,473,o),
+(352,447,o),
+(537,447,cs)
+);
+}
+);
+width = 1403;
+}
+);
+note = uni00B3;
+unicode = 179;
+},
+{
+glyphname = foursuperior;
+lastChange = "2024-09-30 05:55:33 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(912,447,l),
+(1104,447,l),
+(1104,689,l),
+(1346,689,l),
+(1346,849,l),
+(1104,849,l),
+(1104,1568,l),
+(848,1568,l),
+(80,881,l),
+(80,689,l),
+(912,689,l)
+);
+},
+{
+closed = 1;
+nodes = (
+(272,849,l),
+(912,1420,l),
+(912,849,l)
+);
+}
+);
+width = 1424;
+}
+);
+note = uni2074;
+unicode = 8308;
+},
+{
 glyphname = nbspace;
 layers = (
 {
@@ -19016,6 +18082,259 @@ width = 0;
 }
 );
 unicode = 173;
+},
+{
+glyphname = guillemetleft;
+lastChange = "2024-09-30 05:55:33 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(1056,174,ls),
+(1098,145,o),
+(1136,149,o),
+(1167,191,cs),
+(1168,192,ls),
+(1199,234,o),
+(1192,272,o),
+(1149,302,cs),
+(704,608,l),
+(1149,914,ls),
+(1192,944,o),
+(1198,983,o),
+(1167,1025,cs),
+(1167,1025,ls),
+(1136,1067,o),
+(1098,1071,o),
+(1056,1042,cs),
+(626,739,ls),
+(591,714,o),
+(576,686,o),
+(576,643,cs),
+(576,573,ls),
+(576,530,o),
+(591,502,o),
+(626,477,cs)
+);
+},
+{
+closed = 1;
+nodes = (
+(608,174,ls),
+(650,145,o),
+(688,149,o),
+(719,191,cs),
+(720,192,ls),
+(751,234,o),
+(744,272,o),
+(701,302,cs),
+(256,608,l),
+(701,914,ls),
+(744,944,o),
+(750,983,o),
+(719,1025,cs),
+(719,1025,ls),
+(688,1067,o),
+(650,1071,o),
+(608,1042,cs),
+(178,739,ls),
+(143,714,o),
+(128,686,o),
+(128,643,cs),
+(128,573,ls),
+(128,530,o),
+(143,502,o),
+(178,477,cs)
+);
+}
+);
+width = 1315;
+}
+);
+note = guillemotleft;
+unicode = 171;
+},
+{
+glyphname = guillemetright;
+lastChange = "2024-09-30 05:55:33 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(596,191,ls),
+(627,149,o),
+(665,145,o),
+(707,174,cs),
+(1137,477,ls),
+(1172,502,o),
+(1187,530,o),
+(1187,573,cs),
+(1187,643,ls),
+(1187,686,o),
+(1172,714,o),
+(1137,739,cs),
+(707,1043,ls),
+(665,1072,o),
+(627,1067,o),
+(596,1025,cs),
+(595,1024,ls),
+(564,982,o),
+(571,944,o),
+(614,914,cs),
+(1059,608,l),
+(614,302,ls),
+(571,272,o),
+(564,234,o),
+(595,192,cs)
+);
+},
+{
+closed = 1;
+nodes = (
+(148,191,ls),
+(179,149,o),
+(217,145,o),
+(259,174,cs),
+(689,477,ls),
+(724,502,o),
+(739,530,o),
+(739,573,cs),
+(739,643,ls),
+(739,686,o),
+(724,714,o),
+(689,739,cs),
+(259,1043,ls),
+(217,1072,o),
+(179,1067,o),
+(148,1025,cs),
+(147,1024,ls),
+(116,982,o),
+(123,944,o),
+(166,914,cs),
+(611,608,l),
+(166,302,ls),
+(123,272,o),
+(116,234,o),
+(147,192,cs)
+);
+}
+);
+width = 1315;
+}
+);
+note = guillemotright;
+unicode = 187;
+},
+{
+glyphname = euro;
+lastChange = "2024-09-30 05:55:33 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(1409,0,o),
+(1609,84,o),
+(1643,342,cs),
+(1650,395,o),
+(1616,406,o),
+(1563,406,cs),
+(1538,406,ls),
+(1488,406,o),
+(1466,379,o),
+(1456,330,cs),
+(1429,203,o),
+(1269,160,o),
+(1034,160,cs),
+(450,160,o),
+(437,196,o),
+(437,782,cs),
+(437,1368,o),
+(450,1376,o),
+(1034,1376,cs),
+(1269,1376,o),
+(1427,1353,o),
+(1454,1226,cs),
+(1465,1177,o),
+(1487,1151,o),
+(1537,1151,cs),
+(1563,1151,ls),
+(1616,1151,o),
+(1647,1181,o),
+(1640,1234,cs),
+(1605,1494,o),
+(1352,1536,o),
+(1034,1536,cs),
+(420,1536,o),
+(245,1521,o),
+(245,782,cs),
+(245,43,o),
+(420,0,o),
+(1034,0,cs)
+);
+},
+{
+closed = 1;
+nodes = (
+);
+},
+{
+closed = 1;
+nodes = (
+);
+},
+{
+closed = 1;
+nodes = (
+(104,872,o),
+(132,844,o),
+(184,844,cs),
+(1202,844,ls),
+(1254,844,o),
+(1282,872,o),
+(1282,924,cs),
+(1282,976,o),
+(1254,1004,o),
+(1202,1004,cs),
+(184,1004,ls),
+(132,1004,o),
+(104,976,o),
+(104,924,cs)
+);
+},
+{
+closed = 1;
+nodes = (
+(104,560,o),
+(132,532,o),
+(184,532,cs),
+(1202,532,ls),
+(1254,532,o),
+(1282,560,o),
+(1282,612,cs),
+(1282,664,o),
+(1254,692,o),
+(1202,692,cs),
+(184,692,ls),
+(132,692,o),
+(104,664,o),
+(104,612,cs)
+);
+}
+);
+width = 1771;
+}
+);
+note = Euro;
+unicode = 8364;
 },
 {
 glyphname = increment;
@@ -20060,9 +19379,6 @@ value = "Gyrochrome is a trademark of David Moles.";
 );
 }
 );
-settings = {
-disablesNiceNames = 1;
-};
 stems = (
 {
 horizontal = 1;
