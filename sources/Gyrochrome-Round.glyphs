@@ -23,7 +23,8 @@ DisplayStrings = (
 "º",
 "Ω",
 "∆",
-"­"
+"­",
+"/caroncomb.alt"
 );
 customParameters = (
 {
@@ -607,8 +608,8 @@ code = "feature numr;
 feature dnom;
 feature frac;
 feature locl;
-feature ordn;
 feature sups;
+feature ordn;
 ";
 tag = aalt;
 },
@@ -18535,12 +18536,12 @@ unicode = 779;
 },
 {
 glyphname = caroncomb.alt;
-lastChange = "2024-09-29 23:49:26 +0000";
+lastChange = "2024-09-30 06:01:04 +0000";
 layers = (
 {
 anchors = (
 {
-name = "_topright@ascender";
+name = _topright;
 pos = (96,1638);
 }
 );
@@ -18549,22 +18550,21 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(130,1270,ls),
-(121,1215,o),
-(140,1184,o),
-(180,1184,cs),
-(180,1184,ls),
-(223,1184,o),
-(251,1204,o),
-(266,1249,cs),
-(342,1477,ls),
-(360,1532,o),
-(334,1568,o),
-(276,1568,cs),
-(254,1568,ls),
-(205,1568,o),
 (176,1543,o),
-(168,1495,cs)
+(205,1568,o),
+(254,1568,cs),
+(276,1568,ls),
+(334,1568,o),
+(360,1532,o),
+(342,1477,cs),
+(266,1249,ls),
+(251,1204,o),
+(223,1184,o),
+(180,1184,cs),
+(140,1184,o),
+(121,1215,o),
+(130,1270,cs),
+(168,1495,ls)
 );
 }
 );
