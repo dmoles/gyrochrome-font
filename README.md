@@ -9,7 +9,7 @@ Gyrochrome is a rounded, geometric sans-serif derived from Vernon Adams'
 
 Specifically, it is derived from the [Google Fonts version
 1.100](https://github.com/googlefonts/Michroma-font) released on May 25,
-2023 by Emma Marichal. While this version, unlike Adams' original, does not
+2023 by Emma Marichal. While that version, unlike Adams' original, does not
 identify "Michroma" as a Reserved Font Name, this derived font is different
 enough from the original (not only in style, but in the design and
 composition of some characters) that it seemed more in the spirit of the
