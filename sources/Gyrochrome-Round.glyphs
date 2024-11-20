@@ -34400,10 +34400,6 @@ key = manufacturerURL;
 value = "https://www.dmoles.net/";
 },
 {
-key = postscriptFontName;
-value = Gyrochrome;
-},
-{
 key = postscriptFullNames;
 values = (
 {
@@ -34433,5 +34429,5 @@ name = vStem0;
 );
 unitsPerEm = 2048;
 versionMajor = 1;
-versionMinor = 2;
+versionMinor = 3;
 }
