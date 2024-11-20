@@ -34045,7 +34045,6 @@ instanceInterpolations = {
 m002 = 0.6;
 m01 = 0.4;
 };
-isBold = 1;
 name = Bold;
 weightClass = 700;
 },
@@ -34402,14 +34401,14 @@ value = "https://www.dmoles.net/";
 },
 {
 key = postscriptFontName;
-value = "Gyrochrome-Round";
+value = Gyrochrome;
 },
 {
 key = postscriptFullNames;
 values = (
 {
 language = dflt;
-value = "Gyrochrome Round";
+value = Gyrochrome;
 }
 );
 },
