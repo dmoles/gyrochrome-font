@@ -1,6 +1,13 @@
 {
 .appVersion = "3260";
 .formatVersion = 3;
+DisplayStrings = (
+"“",
+"‘",
+"”",
+"‚",
+"„"
+);
 axes = (
 {
 name = Weight;
@@ -16129,25 +16136,27 @@ unicode = 93;
 },
 {
 glyphname = quotesinglbase;
-lastChange = "2024-10-13 22:15:15 +0000";
+lastChange = "2024-11-20 22:47:50 +0000";
 layers = (
 {
 layerId = m01;
 shapes = (
 {
+pos = (64,0);
 ref = comma;
 }
 );
-width = 412;
+width = 505;
 },
 {
 layerId = m002;
 shapes = (
 {
+pos = (59,0);
 ref = comma;
 }
 );
-width = 692;
+width = 647;
 }
 );
 note = quotesinglbase;
@@ -16155,7 +16164,7 @@ unicode = 8218;
 },
 {
 glyphname = quotedblbase;
-lastChange = "2024-10-20 03:15:29 +0000";
+lastChange = "2024-11-20 22:47:58 +0000";
 layers = (
 {
 layerId = m01;
@@ -16165,7 +16174,7 @@ pos = (0,-1536);
 ref = quotedblright;
 }
 );
-width = 796;
+width = 825;
 },
 {
 layerId = m002;
@@ -16175,7 +16184,7 @@ pos = (0,-1536);
 ref = quotedblright;
 }
 );
-width = 1232;
+width = 1139;
 }
 );
 note = quotedblbase;
@@ -16183,29 +16192,29 @@ unicode = 8222;
 },
 {
 glyphname = quotedblleft;
-lastChange = "2024-10-18 03:59:26 +0000";
+lastChange = "2024-11-20 22:47:28 +0000";
 layers = (
 {
 layerId = m01;
 shapes = (
 {
-pos = (0,2688);
+pos = (4,2688);
 ref = quotedblright;
 scale = (1,-1);
 }
 );
-width = 796;
+width = 825;
 },
 {
 layerId = m002;
 shapes = (
 {
-pos = (0,2560);
+pos = (4,2560);
 ref = quotedblright;
 scale = (1,-1);
 }
 );
-width = 1232;
+width = 1139;
 }
 );
 note = quotedblleft;
@@ -16213,7 +16222,7 @@ unicode = 8220;
 },
 {
 glyphname = quotedblright;
-lastChange = "2024-10-20 15:09:05 +0000";
+lastChange = "2024-11-20 22:47:35 +0000";
 layers = (
 {
 layerId = m01;
@@ -16226,21 +16235,21 @@ pos = (320,0);
 ref = quoteright;
 }
 );
-width = 796;
+width = 825;
 },
 {
 layerId = m002;
 shapes = (
 {
-pos = (0,-130);
+pos = (-5,-130);
 ref = quoteright;
 },
 {
-pos = (492,-130);
+pos = (487,-130);
 ref = quoteright;
 }
 );
-width = 1228;
+width = 1139;
 }
 );
 note = quotedblright;
@@ -16248,29 +16257,29 @@ unicode = 8221;
 },
 {
 glyphname = quoteleft;
-lastChange = "2024-10-13 22:17:33 +0000";
+lastChange = "2024-11-20 22:47:21 +0000";
 layers = (
 {
 layerId = m01;
 shapes = (
 {
-pos = (475,0);
+pos = (4,2688);
 ref = quoteright;
-scale = (-1,1);
+scale = (1,-1);
 }
 );
-width = 476;
+width = 505;
 },
 {
 layerId = m002;
 shapes = (
 {
-pos = (756,0);
+pos = (-1,2820);
 ref = quoteright;
-scale = (-1,1);
+scale = (1,-1);
 }
 );
-width = 756;
+width = 647;
 }
 );
 note = quoteleft;
