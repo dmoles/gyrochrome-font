@@ -6,7 +6,8 @@ DisplayStrings = (
 "ẞ",
 "/bowl-r rŕř",
 "/bowl-r r",
-"/bowl-r rŕř"
+"/bowl-r rŕř",
+":"
 );
 axes = (
 {
@@ -14743,7 +14744,7 @@ unicode = 44;
 },
 {
 glyphname = colon;
-lastChange = "2024-10-29 00:08:26 +0000";
+lastChange = "2024-11-21 01:23:32 +0000";
 layers = (
 {
 layerId = m01;
@@ -14763,11 +14764,11 @@ width = 448;
 layerId = m002;
 shapes = (
 {
-pos = (0,725);
+pos = (0,220);
 ref = period;
 },
 {
-pos = (0,159);
+pos = (0,664);
 ref = period;
 }
 );
