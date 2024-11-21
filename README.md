@@ -23,7 +23,9 @@ Microgramma, for a design project, but in a rounded style; I had no budget;
 and I had a Glyphs 3 license. If you find it useful, I'm happy, but if you
 can afford a real typographer you should definitely hire one.
 
--- David Moles, 2024-09-30
+Gyrochrome is available in six weights, from Regular (400) to Heavy (900).
+
+-- David Moles, 2024-11-20
 
 ## Designer
 
