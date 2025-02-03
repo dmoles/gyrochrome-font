@@ -13,6 +13,8 @@ font is different enough from the original (not only in style, but in
 the design and composition of some characters) that it seemed more in
 the spirit of the OFL to give it a new name and make it clear that any
 quality issues with the font should be laid at my door, not theirs.
+For a from-scratch take on the same genre, see Gyrotrope
+(https://github.com/dmoles/gyrotrope-font).
 
 This font exists because I needed a font "of the rounded-square sans
 genre that is closely associated with a 1960s feeling of the future"
@@ -22,9 +24,19 @@ style; I had no budget; and I had a Glyphs 3 license. If you find it
 useful, I'm happy, but if you can afford a real typographer you should
 definitely hire one.
 
--- David Moles, 2024-09-30
+-- David Moles, 2025-02-03
 
 ChangeLog
+
+27 November 2024 (David Moles) Gyrochrome v 1.005
+- Update symbols, tweak some punctuation & marks
+- Adjust some shapes, fix kerning
+
+20 November 2024 (David Moles) Gyrochrome v 1.004
+- Add medium (500) through heavy (900) weights
+
+20 November 2024 (David Moles) Gyrochrome v 1.003
+- Change font name from Gyrochrome Round to plain Gyrochrome
 
 29 September 2024 (David Moles) Gyrochrome Round v 1.000
 - Initial otf release

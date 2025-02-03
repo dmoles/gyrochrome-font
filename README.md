@@ -14,7 +14,8 @@ identify "Michroma" as a Reserved Font Name, this derived font is different
 enough from the original (not only in style, but in the design and
 composition of some characters) that it seemed more in the spirit of the
 OFL to give it a new name and make it clear that any quality issues with
-the font should be laid at my door, not theirs.
+the font should be laid at my door, not theirs. For a from-scratch take
+on the same genre, see [Gyrotrope](https://github.com/dmoles/gyrotrope-font).
 
 This font exists because I needed a font "of the rounded-square sans genre
 that is closely associated with a 1960s feeling of the future" (as Adams
@@ -23,9 +24,11 @@ Microgramma, for a design project, but in a rounded style; I had no budget;
 and I had a Glyphs 3 license. If you find it useful, I'm happy, but if you
 can afford a real typographer you should definitely hire one.
 
+(That said, issue reports are welcome.)
+
 Gyrochrome is available in six weights, from Regular (400) to Heavy (900).
 
--- David Moles, 2024-11-20
+-- David Moles, 2025-02-03
 
 ## Designer
 
