@@ -2,6 +2,10 @@
 
 by David Moles
 
+> **Note:** Gyrochrome is no longer under active development; I recommend the
+> much more polished [Gyrotrope Text](https://github.com/dmoles/gyrotrope-font)
+> instead.
+
 ![Sample of Gyrochrome](documentation/image1.png)
 
 Gyrochrome is a rounded, geometric sans-serif derived from Vernon Adams'
